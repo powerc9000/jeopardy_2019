@@ -1,0 +1,15 @@
+{
+  "name": "jeopardy_2019",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.0.0",
+    "onoff": "^5.0.0"
+  }
+}
