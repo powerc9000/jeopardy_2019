@@ -8,7 +8,7 @@ const red = new gpio(23, "out");
 const arm = new gpio(21, "in", "rising");
 const reset = new gpio(24, "in", "rising");
 
-const controllerPins = [26];
+const controllerPins = [26, 19];
 const controllers = [];
 const players = [];
 const penalties = {};
@@ -43,8 +43,12 @@ function controllerBuzz(val, pin) {
     if (penalties[pin] && penalties[pin] + 250 > Date.now()) {
       return;
     }
-    state = "LOCKED";
     user = getByPin(pin);
+    if (!user) {
+      console.log("No user on pin", pin);
+      return;
+    }
+    state = "LOCKED";
   }
 }
 
@@ -64,7 +68,11 @@ function play() {
   });
   setInterval(() => {
     if (lastState !== state) {
+      if (lastState === "SETUP") {
+        process.stdout.write("\033c");
+      }
       if (state === "LOCKED") {
+        process.stdout.write("\033c");
         console.log(user.name, "RANG IN");
         red.write(1);
         green.write(1);
@@ -114,18 +122,24 @@ async function setup() {
   }
   clearInterval(interval);
   state = "NONE";
+  lastState = "SETUP";
   play();
 }
 
 setup();
 
 process.on("SIGINT", (_) => {
+  console.log("interupt");
   green.unexport();
   red.unexport();
 
+  arm.unwatchAll();
   arm.unexport();
+  reset.unwatchAll();
   reset.unexport();
   controllers.forEach((controller) => {
+    controller.unwatchAll();
     controller.unexport();
   });
+  process.exit(0);
 });
