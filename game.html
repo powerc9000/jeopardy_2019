@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>My Stuff</title>
+  </head>
+  <body>
+    Hello
+    <script>
+      async function start() {
+        const qReq = await fetch("/questions.json");
+        const questions = await qReq.json();
+
+        const other = window.open("/gameboard.html", "gameboard");
+        const hasLast = localStorage.getItem("state");
+        let state = {};
+        let otherState = null;
+        if (hasLast) {
+          otherState = JSON.parse(hasLast);
+        }
+
+				
+      }
+      start();
+    </script>
+  </body>
+</html>
