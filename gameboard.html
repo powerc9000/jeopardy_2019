@@ -2,11 +2,193 @@
   <head>
     <title>Gameboard</title>
   </head>
+  <style>
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+    body {
+      background: #000479;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .category-questions {
+      text-align: center;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
+    #gameboard {
+      height: 100%;
+    }
+
+    .question,
+    .category {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      justify-content: center;
+      border: 2px black solid;
+      font-family: "Bebas Neue";
+    }
+    .question {
+      text-shadow: 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black,
+        5px 5px 0px black, 6px 6px 0 black;
+      font-size: 90px;
+    }
+    .big-question {
+      font-family: "OPTIKorinna-Agency";
+    }
+    .question.text-3 {
+      font-size: 100px;
+    }
+    .category {
+      font-size: 50px;
+      text-shadow: 2px 2px 0px black;
+    }
+
+    #categories {
+      height: 141px;
+      width: 1500px;
+      margin: auto;
+      display: flex;
+      color: white;
+      border: 1px black solid;
+    }
+    #questions {
+      color: #f3b061;
+      height: 805px;
+      width: 1500px;
+      margin: auto;
+      display: flex;
+      border: 1px black solid;
+    }
+    #bigquestion {
+      text-align: center;
+      font-family: "OPTIKorinna-Agency";
+      height: 846px;
+      width: 1500px;
+      text-shadow: 5px 5px 0px black;
+      color: white;
+      font-size: 200px;
+      overflow-wrap: break-word;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      display: none;
+      overflow: hidden;
+    }
+    #deb {
+      top: 0;
+      left: 0;
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      color: red;
+    }
+  </style>
   <body>
+    <div id="deb"></div>
+    <div id="gameboard">
+      <div id="categories"></div>
+      <div id="questions"></div>
+      <div id="scores"></div>
+    </div>
+    <div id="bigquestion"></div>
     <script>
       window.addEventListener("message", (event) => {
-        document.write(event.data);
+        if (event.data.type === "changeState") {
+          renderGameboard(event.data.data);
+        }
       });
+
+      function renderGameboard(state) {
+        deb.innerHTML = "";
+        deb.innerHTML += `Current boardState: ${state.boardState}<br/>`;
+        if (state.boardState === "showBoard") {
+          gameboard.style.display = "";
+          bigquestion.style.display = "none";
+          const categories = state.categories;
+          const scores = state.scores;
+          renderScores("scores", scores);
+          renderCategories("categories", categories);
+          renderQuestions("questions", categories);
+        }
+        if (state.boardState === "showQuestion") {
+          gameboard.style.display = "none";
+          bigquestion.style.display = "flex";
+          const question = state.selectedQuestion;
+
+          bigquestion.innerText = question;
+          setFontSize(bigquestion);
+        }
+      }
+
+      function setFontSize(element) {
+        const length = element.innerText.length;
+        let size;
+        if (length <= 25) {
+          size = 200;
+        } else if (length <= 40) {
+          size = 170;
+        } else if (length <= 70) {
+          size = 120;
+        } else if (length <= 115) {
+          size = 100;
+        } else if (length <= 150) {
+          size = 80;
+        } else if (length <= 265) {
+          size = 70;
+        } else if (length <= 300) {
+          size = 60;
+        } else if (length <= 450) {
+          size = 50;
+        }
+        deb.innerHTML += `Question Length: ${length}<br/>`;
+
+        element.style["font-size"] = `${size}px`;
+      }
+
+      function renderTo(id, markup) {
+        const el = document.getElementById(id);
+        el.innerHTML = markup;
+      }
+
+      function renderScores(id, scores) {
+        const markup = `<div>
+        				</div>`;
+        renderTo(id, markup);
+      }
+      function renderCategories(id, categories) {
+        renderTo(
+          id,
+          categories
+            .map((cat) => {
+              return `<div class="category">${cat.name}</div>`;
+            })
+            .join("")
+        );
+      }
+      function renderQuestions(id, categories) {
+        const markup = categories
+          .map((cat) => {
+            return `<div class="category-questions">
+        						${cat.questions
+                      .map((q) => {
+                        return `<div class="question text-${q.value.length}">${
+                          !q.used ? `$${q.value}` : ""
+                        }</div>`;
+                      })
+                      .join("")}
+        					</div>`;
+          })
+          .join("");
+        renderTo(id, markup);
+      }
     </script>
   </body>
 </html>
