@@ -1,25 +1,68 @@
 <html>
   <head>
     <title>My Stuff</title>
+    <style>
+      #main {
+        display: flex;
+      }
+      #board {
+        flex: 1;
+        display: flex;
+        border: 1px black solid;
+      }
+      .category {
+        border: 1px black solid;
+        flex: 1;
+      }
+      .question {
+        border: 1px black solid;
+      }
+      .question.used {
+        background-color: gray;
+      }
+      .category ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      #currentquestion {
+        flex: 1;
+      }
+    </style>
+    <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
+    <script src="/game.js"></script>
   </head>
   <body>
-    Hello
-    <script>
-      async function start() {
-        const qReq = await fetch("/questions.json");
-        const questions = await qReq.json();
-
-        const other = window.open("/gameboard.html", "gameboard");
-        const hasLast = localStorage.getItem("state");
-        let state = {};
-        let otherState = null;
-        if (hasLast) {
-          otherState = JSON.parse(hasLast);
-        }
-
-				
-      }
-      start();
-    </script>
+    <div data-controller="game">
+      <div data-target="game.haveOther" style="display:none">
+        <button data-action="game#loadPreviousState">Load previous</button>
+      </div>
+      <div id="main">
+        <div id="board" data-target="game.board">Board</div>
+        <div id="currentquestion" data-target="game.question">Question</div>
+      </div>
+      <div data-target="game.players"></div>
+      <div>
+        <form data-action="game#addPlayer" data-target="game.add-form">
+          <input type="text" placeholder="Contestant Name" name="name" />
+          <button type="submit">Add player</button>
+        </form>
+      </div>
+      <template data-target="game.boardTemplate">
+        <div class="category">
+          <h3></h3>
+          <template data-ul-template>
+            <ul>
+              <template data-li-template>
+                <li class="question">
+                  <button data-action="game#selectQ"></button>
+                </li>
+              </template>
+            </ul>
+          </template>
+        </div>
+      </template>
+    </div>
+    <script></script>
   </body>
 </html>
