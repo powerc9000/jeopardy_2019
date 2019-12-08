@@ -2,12 +2,16 @@ const iq = require("inquirer");
 const onoff = require("onoff");
 const gpio = onoff.Gpio;
 
-const green = new gpio(18, "out");
-const red = new gpio(23, "out");
-const light = new gpio(17, "out");
+const OUTPUTS = {
+  GREEN: 18,
+  RED: 23,
+  LIGHT: 17
+};
 
-const arm = new gpio(21, "in", "rising");
-const reset = new gpio(24, "in", "rising");
+const INPUTS = {
+  ARM: 21,
+  RESET: 24
+};
 
 const controllerPins = [26, 19];
 const controllers = [];
@@ -17,14 +21,15 @@ const penalties = {};
 let user = null;
 let state = "SETUP";
 let lastState = null;
+let red;
+let green;
+let light;
+const _listeners = [];
+const _outputs = [];
 
 controllerPins.forEach((pin) => {
   const controller = new gpio(pin, "in", "rising", { debounceTimeout: 10 });
-  controller.watch((e, val) => {
-    controllerBuzz(val, pin);
-  });
-
-  controllers.push(controller);
+  listenOnButton(pin, controllerBuzz);
 });
 
 function getByPin(pin) {
@@ -33,65 +38,101 @@ function getByPin(pin) {
   });
 }
 
-function controllerBuzz(val, pin) {
+function controllerBuzz(val, state, pin) {
   if (state === "SETUP") {
     console.log("Button press on pin", pin);
+    return state;
   }
   if (state !== "OPEN") {
     penalties[pin] = Date.now();
+    return state;
   }
   if (state === "OPEN") {
     if (penalties[pin] && penalties[pin] + 250 > Date.now()) {
-      return;
+      return state;
     }
     user = getByPin(pin);
     if (!user) {
       console.log("No user on pin", pin);
-      return;
+      return state;
     }
-    state = "LOCKED";
+    return "LOCKED";
   }
 }
 
+function createOutput(pin) {
+  const out = new gpio(pin, "out");
+  _outputs.push(out);
+
+  return out;
+}
+function unbindOutputs() {
+  _outputs.forEach((out) => {
+    out.unexport();
+  });
+}
+
+let stateChangeCb;
+function listenOnButton(pin, callback) {
+  const button = new gpio(pin, "in", "rising", { debounceTimeout: 10 });
+  button.watch((err, val) => {
+    const result = callback(val, state, pin);
+    if (result && result !== state) {
+      stateChangeCb(state, result);
+      state = result;
+    }
+  });
+  _listeners.push(button);
+}
+
+function unbindInputs() {
+  _listeners.forEach((e) => {
+    e.unwatchAll();
+    e.unexport();
+  });
+}
+
+function onStateChange(cb) {
+  stateChangeCb = cb;
+}
+
 function play() {
-  arm.watch((e, val) => {
+  listenOnButton(INPUTS.ARM, (val, state) => {
     if (val) {
       if (state === "NONE") {
-        state = "OPEN";
+        return "OPEN";
       }
     }
   });
 
-  reset.watch((e, val) => {
+  listenOnButton(INPUTS.RESET, (val, state) => {
     if (val) {
-      state = "NONE";
+      return "NONE";
     }
   });
-  setInterval(() => {
-    if (lastState !== state) {
-      light.write(0);
-      if (lastState === "SETUP") {
-        process.stdout.write("\033c");
-      }
-      if (state === "LOCKED") {
-        process.stdout.write("\033c");
-        console.log(user.name, "RANG IN");
-        red.write(1);
-        green.write(1);
-      }
-      if (state === "OPEN") {
-        process.stdout.write("\033c");
-        red.write(0);
-        light.write(1);
-        green.write(1);
-      }
-      if (state === "NONE") {
-        red.write(1);
-        green.write(0);
-      }
+
+  onStateChange((lastState, state) => {
+    light.write(0);
+    if (lastState === "SETUP") {
+      process.stdout.write("\033c");
     }
-    lastState = state;
-  }, 200);
+    if (state === "LOCKED") {
+      process.stdout.write("\033c");
+      console.log(user.name, "RANG IN");
+      red.write(1);
+      green.write(1);
+    }
+    if (state === "OPEN") {
+      process.stdout.write("\033c");
+      red.write(0);
+      light.write(1);
+      green.write(1);
+    }
+    if (state === "NONE") {
+      red.write(1);
+      green.write(0);
+    }
+  });
 }
 
 let flip = 0;
@@ -105,6 +146,11 @@ function toggleLights() {
 
 async function setup() {
   let interval = toggleLights();
+
+  green = createOutput(OUTPUTS.GREEN);
+  red = createOutput(OUTPUTS.RED);
+  light = createOutput(OUTPUTS.LIGHT);
+
   const numPlayers = (await iq.prompt([
     { type: "input", name: "players", message: "Number of players" }
   ])).players;
@@ -133,18 +179,8 @@ async function setup() {
 setup();
 
 process.on("SIGINT", (_) => {
-  console.log("interupt");
-  green.unexport();
-  red.unexport();
-  light.unexport();
+  unbindOutputs();
+  unbindInputs();
 
-  arm.unwatchAll();
-  arm.unexport();
-  reset.unwatchAll();
-  reset.unexport();
-  controllers.forEach((controller) => {
-    controller.unwatchAll();
-    controller.unexport();
-  });
   process.exit(0);
 });
