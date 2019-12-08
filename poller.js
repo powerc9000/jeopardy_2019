@@ -4,6 +4,7 @@ const gpio = onoff.Gpio;
 
 const green = new gpio(18, "out");
 const red = new gpio(23, "out");
+const light = new gpio(17, "out");
 
 const arm = new gpio(21, "in", "rising");
 const reset = new gpio(24, "in", "rising");
@@ -68,6 +69,7 @@ function play() {
   });
   setInterval(() => {
     if (lastState !== state) {
+      light.write(0);
       if (lastState === "SETUP") {
         process.stdout.write("\033c");
       }
@@ -78,7 +80,9 @@ function play() {
         green.write(1);
       }
       if (state === "OPEN") {
+        process.stdout.write("\033c");
         red.write(0);
+        light.write(1);
         green.write(1);
       }
       if (state === "NONE") {
@@ -132,6 +136,7 @@ process.on("SIGINT", (_) => {
   console.log("interupt");
   green.unexport();
   red.unexport();
+  light.unexport();
 
   arm.unwatchAll();
   arm.unexport();
