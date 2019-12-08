@@ -102,7 +102,7 @@
 				]
 			},
 			{
-				"name": "This",
+				"name": "That",
 				"questions": [
 					{
 						"value": "100",
@@ -121,8 +121,9 @@
 						"q": "this?"
 					},
 					{
-						"value": "100",
-						"q": "this?"
+						"value": "500",
+						"q": "Off",
+						"dailyDouble": true
 					}
 				]
 			},
@@ -147,7 +148,8 @@
 					},
 					{
 						"value": "100",
-						"q": "HI?"
+						"q": "HI?",
+						"dailyDouble": true
 					}
 				]
 			}

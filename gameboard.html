@@ -16,6 +16,13 @@
       align-items: center;
       justify-content: center;
     }
+    body.dd {
+      background: linear-gradient(
+        90deg,
+        rgba(217, 84, 61, 1) 1%,
+        rgba(0, 4, 121, 1) 83%
+      );
+    }
     .category-questions {
       text-align: center;
       display: flex;
@@ -82,6 +89,16 @@
       display: none;
       overflow: hidden;
     }
+    #dailydouble {
+      font-size: 400px;
+      line-height: 300px;
+      font-family: "Bebas Neue";
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 0px #d0d4dd, 2px 2px #d0d4dd, 3px 3px #d0d4dd,
+        4px 4px #d0d4dd, 5px 5px #d0d4dd, 6px 6px #d0d4dd, 7px 7px #d0d4dd,
+        8px 8px #d0d4dd, 9px 9px #d0d4dd, 10px 10px #d0d4dd, 11px 11px #d0d4dd;
+    }
     #deb {
       top: 0;
       left: 0;
@@ -99,6 +116,7 @@
       <div id="scores"></div>
     </div>
     <div id="bigquestion"></div>
+    <div id="dailydouble">DAILY<br />DOUBLE</div>
     <script>
       window.addEventListener("message", (event) => {
         if (event.data.type === "changeState") {
@@ -107,11 +125,13 @@
       });
 
       function renderGameboard(state) {
+        document.body.classList.remove("dd");
         deb.innerHTML = "";
         deb.innerHTML += `Current boardState: ${state.boardState}<br/>`;
         if (state.boardState === "showBoard") {
           gameboard.style.display = "";
           bigquestion.style.display = "none";
+          dailydouble.style.display = "none";
           const categories = state.categories;
           const scores = state.scores;
           renderScores("scores", scores);
@@ -121,10 +141,18 @@
         if (state.boardState === "showQuestion") {
           gameboard.style.display = "none";
           bigquestion.style.display = "flex";
+          dailydouble.style.display = "none";
           const question = state.selectedQuestion;
 
           bigquestion.innerText = question;
           setFontSize(bigquestion);
+        }
+
+        if (state.boardState === "dailyDouble") {
+          document.body.classList.add("dd");
+          gameboard.style.display = "none";
+          bigquestion.style.display = "none";
+          dailydouble.style.display = "flex";
         }
       }
 
