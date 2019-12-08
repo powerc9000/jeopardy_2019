@@ -1,6 +1,7 @@
 {
 	"games": [
 		{
+			"name": "El diablo",
 			"jeopardy": [{
 				"name": "This",
 				"questions": [
@@ -153,7 +154,165 @@
 					}
 				]
 			}
-			]
+			],
+			"double_jeopardy": [{
+				"name": "This",
+				"questions": [
+					{
+						"value": "2000",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					}
+				]
+			},
+			{
+				"name": "This",
+				"questions": [
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					}
+				]
+			},
+			{
+				"name": "This",
+				"questions": [
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					}
+				]
+			},
+			{
+				"name": "This",
+				"questions": [
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					}
+				]
+			},
+			{
+				"name": "That",
+				"questions": [
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "500",
+						"q": "Off",
+						"dailyDouble": true
+					}
+				]
+			},
+			{
+				"name": "This",
+				"questions": [
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "this?"
+					},
+					{
+						"value": "100",
+						"q": "HI?",
+						"dailyDouble": true
+					}
+				]
+			}
+			],
+			"final_jeopardy": [{
+				"name": "it's this",
+				"questions": [{"value": "show", "q": "HEY!"}]
+			}]
+
 		}
 	]
 }

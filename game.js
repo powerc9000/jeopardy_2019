@@ -12,23 +12,62 @@
         const questions = await this.getQuestions();
         const hasLast = localStorage.getItem("state");
         this.board = window.open("/gameboard.html", "gameboard");
+        this.questions = questions;
         this.state = {
-          boardState: "showBoard",
+          boardState: "setup",
+          game: 0,
           categories: questions.games[0].jeopardy,
           players: [],
+          round: "jeopardy",
           selectedQuestion: "What is my favorite Katie."
         };
+        this.setup();
         this.otherState = null;
         if (hasLast) {
           this.otherState = JSON.parse(hasLast);
         }
         setTimeout(() => {
           this.tellState();
-        }, 500);
+        }, 200);
+      }
+      setup() {
+        const select = this.targets.find("gameListSelect");
+
+        this.questions.games.forEach((g, index) => {
+          const option = document.createElement("option");
+          option.value = index;
+          option.innerText = `${index}: ${g.name}`;
+          select.appendChild(option);
+        });
+        select.style = "";
+      }
+      start() {
+        this.tellState();
+        this.fillBoard();
+      }
+      selectGame(e) {
+        this.state.game = e.target.value;
+        this.state.categories = this.questions.games[e.target.value].jeopardy;
+        this.state.boardState = "showBoard";
+        this.start();
+        this.targets.find("gameListSelect").style.display = "none";
+      }
+      setRound(e) {
+        const round = e.target.value;
+        this.state.round = round;
+        this.state.boardState = "showBoard";
+        console.log(this.state.game, this.questions);
+        this.state.categories = this.questions.games[this.state.game][round];
+        if (round === "final_jeopardy") {
+          this.state.boardState = "showQuestion";
+          this.state.selectedQuestion = this.state.categories[0].name;
+        }
+        this.tellState();
         this.fillBoard();
       }
       loadPreviousState() {
         this.state = this.otherState;
+        this.targets.find("gameListSelect").style.display = "none";
         this.tellState();
         this.showPlayers();
         this.fillBoard();
@@ -73,6 +112,7 @@
           data: this.state
         });
         this.targets.find("boardState").innerText = this.state.boardState;
+        this.targets.find("round").innerText = this.state.round;
       }
       selectQ(e) {
         const target = e.target;
