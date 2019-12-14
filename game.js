@@ -101,7 +101,6 @@
         const q = target.dataset.question;
         const [cat, index] = q.split(":");
         const question = this.state.categories[cat].questions[index];
-        console.log(question);
         this.state.question = { index, cat, ...question };
         this.setQuestion();
       }
@@ -211,7 +210,7 @@
         );
         template.querySelector(
           `[data-for="question"]`
-        ).innerHTML = this.state.question.q;
+        ).innerHTML = `${this.state.question.q}<br><br>${this.state.question.answer}`;
 
         if (this.state.question.dailyDouble) {
           const input = template.querySelector(`[data-for="wager"]`);
