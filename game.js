@@ -12,23 +12,62 @@
         const questions = await this.getQuestions();
         const hasLast = localStorage.getItem("state");
         this.board = window.open("/gameboard.html", "gameboard");
+        this.questions = questions;
         this.state = {
-          boardState: "showBoard",
+          boardState: "setup",
+          game: 0,
           categories: questions.games[0].jeopardy,
           players: [],
+          round: "jeopardy",
           selectedQuestion: "What is my favorite Katie."
         };
+        this.setup();
         this.otherState = null;
         if (hasLast) {
           this.otherState = JSON.parse(hasLast);
         }
         setTimeout(() => {
           this.tellState();
-        }, 500);
+        }, 200);
+      }
+      setup() {
+        const select = this.targets.find("gameListSelect");
+
+        this.questions.games.forEach((g, index) => {
+          const option = document.createElement("option");
+          option.value = index;
+          option.innerText = `${index}: ${g.name}`;
+          select.appendChild(option);
+        });
+        select.style = "";
+      }
+      start() {
+        this.tellState();
+        this.fillBoard();
+      }
+      selectGame(e) {
+        this.state.game = e.target.value;
+        this.state.categories = this.questions.games[e.target.value].jeopardy;
+        this.state.boardState = "showBoard";
+        this.start();
+        this.targets.find("gameListSelect").style.display = "none";
+      }
+      setRound(e) {
+        const round = e.target.value;
+        this.state.round = round;
+        this.state.boardState = "showBoard";
+        console.log(this.state.game, this.questions);
+        this.state.categories = this.questions.games[this.state.game][round];
+        if (round === "final_jeopardy") {
+          this.state.boardState = "showQuestion";
+          this.state.selectedQuestion = this.state.categories[0].name;
+        }
+        this.tellState();
         this.fillBoard();
       }
       loadPreviousState() {
         this.state = this.otherState;
+        this.targets.find("gameListSelect").style.display = "none";
         this.tellState();
         this.showPlayers();
         this.fillBoard();
@@ -54,7 +93,16 @@
         });
         this.tellState();
         this.showPlayers();
+        this.setQuestion();
         form.reset();
+      }
+      adjustQuestion(e) {
+        const target = e.target;
+        const q = target.dataset.question;
+        const [cat, index] = q.split(":");
+        const question = this.state.categories[cat].questions[index];
+        this.state.question = { index, cat, ...question };
+        this.setQuestion();
       }
       tellState() {
         localStorage.setItem("state", JSON.stringify(this.state));
@@ -62,32 +110,48 @@
           type: "changeState",
           data: this.state
         });
+        this.targets.find("boardState").innerText = this.state.boardState;
+        this.targets.find("round").innerText = this.state.round;
       }
       selectQ(e) {
         const target = e.target;
         const q = target.dataset.question;
         const [cIDX, qIDX] = q.split(":");
-        console.log(
-          this.state,
-          this.state.categories,
-          this.state.categories[cIDX]
-        );
         const question = this.state.categories[cIDX].questions[qIDX];
         question.used = true;
         this.state.question = { index: qIDX, cat: cIDX, ...question };
         this.state.selectedQuestion = question.q;
-        this.state.boardState = "showQuestion";
+        if (question.dailyDouble) {
+          this.state.boardState = "dailyDouble";
+        } else {
+          this.state.boardState = "showQuestion";
+        }
         this.setQuestion();
         this.fillBoard();
+        this.tellState();
+      }
+      showDailyDouble() {
+        this.state.boardState = "showQuestion";
         this.tellState();
       }
       clearQuestion() {
         this.state.boardState = "showBoard";
         this.tellState();
       }
+      setWager() {
+        console.log(this.state.boardState);
+        if (this.state.boardState === "dailyDouble") {
+          this.state.boardState = "showQuestion";
+          this.tellState();
+        }
+      }
       gotRight(e) {
         const parent = e.target.parentNode;
         const player = this.state.players[parent.dataset.player];
+        this.setDailyDoubleWager(
+          this.state.question,
+          this.targets.find("ddWager")
+        );
         this.player.removeFrom("wrong", player, this.state.question);
         this.player.addTo("correct", player, this.state.question);
         this.tellState();
@@ -97,6 +161,10 @@
       gotWrong(e) {
         const parent = e.target.parentNode;
         const player = this.state.players[parent.dataset.player];
+        this.setDailyDoubleWager(
+          this.state.question,
+          this.targets.find("ddWager")
+        );
         this.player.removeFrom("correct", player, this.state.question);
         this.player.addTo("wrong", player, this.state.question);
         this.tellState();
@@ -106,11 +174,21 @@
       gotClear(e) {
         const parent = e.target.parentNode;
         const player = this.state.players[parent.dataset.player];
+
         this.player.removeFrom("correct", player, this.state.question);
         this.player.removeFrom("wrong", player, this.state.question);
         this.tellState();
         this.showPlayers();
         this.setQuestion();
+      }
+      setDailyDoubleWager(question, wager) {
+        question.value = wager.value;
+        const stateQ = this.state.categories[question.cat].questions[
+          question.index
+        ];
+        if (stateQ) {
+          stateQ.value = wager.value;
+        }
       }
       showPlayers() {
         const html = this.state.players
@@ -126,17 +204,46 @@
       }
       setQuestion() {
         if (!this.state.question) return;
-        currentquestion.innerHTML = `
-							${this.state.question.value}<br>${this.state.question.q}
-							<button data-action="game#clearQuestion">Clear</button>
-								<div>
-								${this.state.players
-                  .map((p, idx) => {
-                    return `<div data-player="${idx}">${p.name}<button data-action="game#gotRight">right</button><button data-action="game#gotWrong">wrong</button><button data-action="game#gotClear">none</button></div>`;
-                  })
-                  .join("")}
-								</div>
-							`;
+        const template = document.importNode(
+          this.targets.find("questionSection").content,
+          true
+        );
+        template.querySelector(
+          `[data-for="question"]`
+        ).innerHTML = `${this.state.question.q}<br><br>${this.state.question.answer}`;
+
+        if (this.state.question.dailyDouble) {
+          const input = template.querySelector(`[data-for="wager"]`);
+          template.querySelector(`[data-for="ddStuff"]`).style = "";
+          input.value = this.state.question.value;
+        }
+
+        const buttonParent = template.querySelector(`[data-for="userButtons"]`);
+        this.state.players.forEach((player, index) => {
+          const buttonTemplate = buttonParent
+            .querySelector("[data-for=buttonTemplate]")
+            .cloneNode(true);
+          buttonTemplate.style = "";
+          buttonTemplate.dataset.player = index;
+          buttonTemplate.querySelector("[data-for=name]").innerText =
+            player.name;
+
+          const status = this.player.getQuestionStatus(
+            player,
+            this.state.question
+          );
+          if (status) {
+            const button = buttonTemplate.querySelector(
+              `[data-for="${status}"]`
+            );
+            if (button) {
+              button.classList.add("active");
+            }
+          }
+          buttonParent.appendChild(buttonTemplate);
+        });
+        currentquestion.innerHTML = "";
+        currentquestion.appendChild(template);
       }
       fillBoard() {
         const board = this.targets.find("board");
@@ -161,9 +268,14 @@
           cat.questions.forEach((q, qIdx) => {
             const li = liTemplate.cloneNode(true);
             li.classList.toggle("used", !!q.used);
-            const button = li.querySelector("button");
+            if (q.used) {
+              li.querySelector(`button[data-for="edit"]`).style = "";
+            }
+            const button = li.querySelector("button[data-for=select]");
             button.innerText = q.value;
-            button.dataset.question = `${catIdx}:${qIdx}`;
+            [...li.querySelectorAll("button")].forEach((button) => {
+              button.dataset.question = `${catIdx}:${qIdx}`;
+            });
             ul.appendChild(li);
           });
 
@@ -201,6 +313,25 @@
           });
 
           return score;
+        },
+        getQuestionStatus: (player, question) => {
+          const isWrong = player.wrong.find((q) => {
+            return q.cat === question.cat && q.index === question.index;
+          });
+
+          if (isWrong) {
+            return "wrong";
+          }
+
+          const isRight = player.correct.find((q) => {
+            return q.cat === question.cat && q.index === question.index;
+          });
+
+          if (isRight) {
+            return "right";
+          }
+
+          return null;
         }
       };
     }

@@ -1,157 +1,3415 @@
 {
-	"games": [
-		{
-			"jeopardy": [{
-				"name": "This",
-				"questions": [
-					{
-						"value": "2000",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					}
-				]
-			},
-			{
-				"name": "This",
-				"questions": [
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					}
-				]
-			},
-			{
-				"name": "This",
-				"questions": [
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					}
-				]
-			},
-			{
-				"name": "This",
-				"questions": [
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					}
-				]
-			},
-			{
-				"name": "This",
-				"questions": [
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					}
-				]
-			},
-			{
-				"name": "This",
-				"questions": [
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "this?"
-					},
-					{
-						"value": "100",
-						"q": "HI?"
-					}
-				]
-			}
-			]
-		}
-	]
+    "games": [
+        {
+            "name": "Game 1",
+            "jeopardy": [
+                {
+                    "name": "Authors and their sleuths ",
+                    "questions": [
+                        {
+                            "q": "Sam Spade",
+                            "answer": "Dashiell Hammett",
+                            "value": 200
+                        },
+                        {
+                            "q": "Kinsey Millhone",
+                            "answer": "Sue Grafton",
+                            "value": 400
+                        },
+                        {
+                            "q": "C. Auguste Dupin",
+                            "answer": "(Edgar Allan) Poe",
+                            "value": 600
+                        },
+                        {
+                            "q": "Alex Cross",
+                            "answer": "James Patterson",
+                            "value": 800
+                        },
+                        {
+                            "q": "Easy Rawlins",
+                            "answer": "Walter Mosley",
+                            "value": 1000
+                        }
+                    ]
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'International Harvester was historically a major employer in Springfield, near Dayton in this state'",
+                            "value": 200,
+                            "answer": "Ohio"
+                        },
+                        {
+                            "q": "'Situated on the picturesque Sangamon River, Springfield in this state is served by Capital Airport'",
+                            "value": 400,
+                            "answer": "Illinois"
+                        },
+                        {
+                            "q": "'After seeing a show at Juanita K. Hammons Hall in Springfield in this state, you can head on to Branson'",
+                            "value": 600,
+                            "answer": "Missouri"
+                        },
+                        {
+                            "q": "'Springfield in this state is where the common spring clothespin was invented & a Green Mountain guide is published'",
+                            "value": 800,
+                            "answer": "Vermont"
+                        },
+                        {
+                            "q": "'If you hurt yourself in Springfield in this state, head over to the McKenzie-Willamette Hospital'",
+                            "value": 1000,
+                            "answer": "Oregon"
+                        }
+                    ],
+                    "name": "LET'S VISIT SPRINGFIELD"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'The 2 words preceding \"Pound foolish\"'",
+                            "value": 200,
+                            "answer": "Penny Wise"
+                        },
+                        {
+                            "q": "'Without government authorization, Andrew Jackson seized this Fla. city from Spain on Nov. 7, 1817'",
+                            "value": 400,
+                            "answer": "Pensacola"
+                        },
+                        {
+                            "q": "'In Greek mythology, she was the daughter of Icarus & the wife of Odysseus'",
+                            "value": 600,
+                            "answer": "Penelope"
+                        },
+                        {
+                            "q": "'Next to last'",
+                            "value": 800,
+                            "answer": "Penultimate"
+                        },
+                        {
+                            "q": "'In 1955 this group had its only Top 40 hit with the following song:<br />(\"Earth Angel, Earth Angel, will you be mine...\")'",
+                            "value": 1000,
+                            "answer": "The Penguins"
+                        }
+                    ],
+                    "name": "\"PEN\" PALS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'1983:<br />\"Thriller\"'",
+                            "value": 200,
+                            "answer": "Michael Jackson"
+                        },
+                        {
+                            "q": "'1991:<br />\"Ropin' The Wind\"'",
+                            "value": 400,
+                            "answer": "Garth Brooks"
+                        },
+                        {
+                            "q": "'1971:<br />\"Tapestry\"'",
+                            "value": 600,
+                            "answer": "Carole King"
+                        },
+                        {
+                            "q": "'1988:<br />\"Faith\"'",
+                            "value": 800,
+                            "answer": "George Michael"
+                        },
+                        {
+                            "q": "'1989:<br />\"Forever Your Girl\"'",
+                            "value": 1000,
+                            "answer": "Paula Abdul"
+                        }
+                    ],
+                    "name": "NO. 1 ALBUMS OF THE YEARS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'We're not sure whether the Spanish ship on its city flag represents the Nina, Pinta, or Santa Maria'",
+                            "value": 200,
+                            "answer": "Columbus (Ohio)"
+                        },
+                        {
+                            "q": "'This capital was created by the Missouri legislature & laid out by the son of Daniel Boone in the 1820s'",
+                            "value": 400,
+                            "answer": "Jefferson City"
+                        },
+                        {
+                            "q": "'Mount Rainier is visible to the east from its state capitol building'",
+                            "value": 600,
+                            "answer": "Olympia (Washington)"
+                        },
+                        {
+                            "q": "'One of the major attractions in this state capital is the tomb of Abraham Lincoln in Oak Ridge Cemetery'",
+                            "value": 800,
+                            "answer": "Springfield"
+                        },
+                        {
+                            "q": "'This capital began as a small Dutch outpost, Fort Nassau, built on Westerlo Island in the Hudson River'",
+                            "value": 1000,
+                            "answer": "Albany (New York)"
+                        }
+                    ],
+                    "name": "STATE CAPITALS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Formerly an independent country, this region of China is known as the \"Roof of the World\"'",
+                            "value": 200,
+                            "answer": "Tibet"
+                        },
+                        {
+                            "q": "'No trees grow above this \"line\" near the tops of mountains'",
+                            "value": 400,
+                            "answer": "the timber line"
+                        },
+                        {
+                            "q": "'These fashionable head coverers for men may be beaver, opera or silk'",
+                            "value": 600,
+                            "answer": "top hats"
+                        },
+                        {
+                            "q": "'2-word term for an extravagantly & humorously exaggerated story of the backwoods'",
+                            "value": 800,
+                            "answer": "a tall tale"
+                        },
+                        {
+                            "q": "'The jet stream is found in this layer of the atmosphere'",
+                            "value": 1000,
+                            "answer": "the troposphere"
+                        }
+                    ],
+                    "name": "HIGH \"T\""
+                }
+            ],
+            "double_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'This planet averages about 67 million miles from the sun; Earth's in the 90 millions'",
+                            "value": 400,
+                            "answer": "Venus"
+                        },
+                        {
+                            "q": "'Its moon Ganymede is the largest in the solar system'",
+                            "value": 800,
+                            "answer": "Jupiter"
+                        },
+                        {
+                            "q": "'The least dense planet in the solar system, it would actually float if you could find a big enough tub to put it in'",
+                            "value": 1200,
+                            "answer": "Saturn"
+                        },
+                        {
+                            "q": "'In 2005 NASA experimented with a low-pressure greenhouse to grow plants on this carbon dioxide-rich planet'",
+                            "value": 1600,
+                            "answer": "Mars"
+                        },
+                        {
+                            "q": "'In 1781 it became the first planet discovered in modern times'",
+                            "value": 2000,
+                            "answer": "Uranus"
+                        }
+                    ],
+                    "name": "DID YOU PLANET THAT WAY?"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Ye Olde Trip To Jerusalem claims to be the oldest of these in Britain, so bottoms up to it'",
+                            "value": 400,
+                            "answer": "pub"
+                        },
+                        {
+                            "q": "'The British turned this brand name into a verb meaning to vacuum'",
+                            "value": 800,
+                            "answer": "Hoover"
+                        },
+                        {
+                            "q": "'Numerical phrase referring to the P.M.'s office'",
+                            "value": 1200,
+                            "answer": "10 Downing Street/No. 10"
+                        },
+                        {
+                            "q": "'If you pinch a kipper you've stolen a fish; if you take a kip, you've done this'",
+                            "value": 1600,
+                            "answer": "taking a nap"
+                        },
+                        {
+                            "q": "'If you've grassed on your mates, you haven't mowed them down but did this to them'",
+                            "value": 2000,
+                            "answer": "tattle/inform on them"
+                        }
+                    ],
+                    "name": "THE QUEEN'S ENGLISH"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Discounting China, it's the most populous country named for a person'",
+                            "value": 400,
+                            "answer": "United States of America (Amerigo Vespucci)"
+                        },
+                        {
+                            "q": "'This South American country was named for \"El Libertador\"'",
+                            "value": 800,
+                            "answer": "Bolivia (Simon Bolivar)"
+                        },
+                        {
+                            "q": "'This Pacific island nation was named for the crown prince of Spain in 1542'",
+                            "value": 1200,
+                            "answer": "Philippines"
+                        },
+                        {
+                            "q": "'Zambia & Zimbabwe were formed out of this country named for a British colonizer'",
+                            "value": 1600,
+                            "answer": "Rhodesia (Cecil Rhodes)"
+                        },
+                        {
+                            "q": "'This Mideast country was named for a man named Abdul'",
+                            "value": 2000,
+                            "answer": "Saudi Arabia (Abdul Aziz Ibn Saud)"
+                        }
+                    ],
+                    "name": "COUNTRIES NAMED FOR PEOPLE"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'His song \"Hello Muddah, Hello Fadduh!\" may have been based on the letters his son Robert sent from Camp Champlain'",
+                            "value": 400,
+                            "answer": "Allan Sherman"
+                        },
+                        {
+                            "q": "'\"She is afraid to come out of the water\" because it's what \"she wore for the first time today\"'",
+                            "value": 800,
+                            "answer": "an itsy bitsy teenie weenie yellow polka dot bikini"
+                        },
+                        {
+                            "q": "'This funky guy was \"born in Arizona, moved to Babylonia\" & \"got a condo made a stone-a\"'",
+                            "value": 1200,
+                            "answer": "King Tut"
+                        },
+                        {
+                            "q": "'This 1920s novelty hit supposedly got its title from the confusing statement of a Greek fruit peddler'",
+                            "value": 1600,
+                            "answer": "\"Yes, We Have No Bananas\""
+                        },
+                        {
+                            "q": "'This title guy said, \"Ooo eee, ooo ah ah, ting tang, walla walla bing bang\"'",
+                            "value": 2000,
+                            "answer": "the witch doctor"
+                        }
+                    ],
+                    "name": "NOVELTY SONGS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'His Symphony in B Minor wasn't his only unfinished composition -- just the most famous'",
+                            "value": 400,
+                            "answer": "Franz Schubert"
+                        },
+                        {
+                            "q": "'In 1928 Ida Rubinstein commissioned him to write a ballet, so he created \"Bolero\"'",
+                            "value": 800,
+                            "answer": "Maurice Ravel"
+                        },
+                        {
+                            "q": "'Early in his career he was the musical director of La Scala; he later led the NBC Symphony'",
+                            "value": 1200,
+                            "answer": "Arturo Toscanini"
+                        },
+                        {
+                            "q": "'Modern composer who was called the world's outstanding specialist on Hungarian folk music'",
+                            "value": 1600,
+                            "answer": "Bela Bartok"
+                        },
+                        {
+                            "q": "'The Vale Giulia, The Tritone, The Trevi & one at the Villa Medici were his \"Fountains of Rome\"'",
+                            "value": 2000,
+                            "answer": "Otto Resphighi"
+                        }
+                    ],
+                    "name": "CLASSICAL MUSIC"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Radically changed China<br />(1949-76)'",
+                            "value": 400,
+                            "answer": "Mao Tse-tung"
+                        },
+                        {
+                            "q": "'A less-than-pleasant Russian<br />(1547-84)'",
+                            "value": 800,
+                            "answer": "Ivan the Terrible"
+                        },
+                        {
+                            "q": "'Spain management<br />(1939-75)'",
+                            "value": 1200,
+                            "answer": "Franco"
+                        },
+                        {
+                            "q": "'Roman around<br />(27 B.C. to 14 A.D.)'",
+                            "value": 1600,
+                            "answer": "Augustus (Caesar)"
+                        },
+                        {
+                            "q": "'King of Jordan & a familiar name to our president<br />(1952-99)'",
+                            "value": 2000,
+                            "answer": "Hussein"
+                        }
+                    ],
+                    "name": "THEY RULED!"
+                }
+            ],
+            "final_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'\"I had no idea of originating an American flapper... I simply took girls whom I knew very well\" & \"used them for my heroines\"'",
+                            "value": "",
+                            "answer": "F. Scott Fitzgerald"
+                        }
+                    ],
+                    "name": "AUTHORS' QUOTATIONS"
+                }
+            ]
+        },
+        {
+            "name": "Game 2",
+            "jeopardy": [
+                {
+                    "name": "Jane Austin",
+                    "questions": [
+                        {
+                            "q": "She is the most well-known and well-loved of Jane Austen's characters in Pride and Prejudice.",
+                            "answer": "Lizzy Bennet",
+                            "value": 200
+                        },
+                        {
+                            "q": "Jane Austen's father's occupation, also a well-respected member of English society",
+                            "answer": "A Clergyman",
+                            "value": 400
+                        },
+                        {
+                            "q": "She died in 1817 in this english town",
+                            "answer": "Winchester, United Kingdom",
+                            "value": 600
+                        },
+                        {
+                            "q": "The 1995 Pride and prejudice miniseries by the BBC starred this man as Mr. Darcy",
+                            "answer": "Colin Firth",
+                            "value": 800
+                        },
+                        {
+                            "q": "Her 1816 Novel Emma is set in this fictional English Villiage",
+                            "answer": "Highbury",
+                            "value": 1000
+                        }
+                    ]
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'A French scientist suggested using wood as a paper source after watching these insects make it'",
+                            "value": 200,
+                            "answer": "Wasps"
+                        },
+                        {
+                            "q": "'Lily pads must have made une impression on him, as this man painted over 200 versions of them'",
+                            "value": 400,
+                            "answer": "Claude Monet"
+                        },
+                        {
+                            "q": "'Everything was shipshape, but no one was home when this ghost ship was boarded in 1872'",
+                            "value": 600,
+                            "answer": "The Mary Celeste"
+                        },
+                        {
+                            "q": "'Some members of these Melanesian \"cults\" await consumer goods that will be sent by supernatural forces'",
+                            "value": 800,
+                            "answer": "Cargo cults"
+                        },
+                        {
+                            "q": "'This lieutenant colonel led the British forces in the battle that began the French & Indian War'",
+                            "value": 1000,
+                            "answer": "George Washington"
+                        }
+                    ],
+                    "name": "STRANGE BUT TRUE"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Olivia Newton-John:<br />\"I ____ Love You\"'",
+                            "value": 200,
+                            "answer": "Honestly"
+                        },
+                        {
+                            "q": "'Cee Lo Green:<br />\"____ You\" (the radio version, please)'",
+                            "value": 400,
+                            "answer": "Forget"
+                        },
+                        {
+                            "q": "'Salt-N-Pepa with En Vogue:<br />\"Whatta ____\"'",
+                            "value": 600,
+                            "answer": "Man"
+                        },
+                        {
+                            "q": "'Cyndi Lauper:<br />\"She ____\"'",
+                            "value": 800,
+                            "answer": "Bop"
+                        },
+                        {
+                            "q": "'Cher:<br />\"Half-____\"'",
+                            "value": 1000,
+                            "answer": "Breed"
+                        }
+                    ],
+                    "name": "FILL IN THE TOP 40 TITLE"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'American colony that was a \"holy experiment\" for the Society of Friends or Quakers'",
+                            "value": 200,
+                            "answer": "Pennsylvania"
+                        },
+                        {
+                            "q": "'1 of the 2 gospels in which a version of the Lord's Prayer appears'",
+                            "value": 400,
+                            "answer": "Luke (or Matthew)"
+                        },
+                        {
+                            "q": "'This Christian church is headed by the patriarch of Alexandria, Egypt'",
+                            "value": 600,
+                            "answer": "the Coptic Christian Church"
+                        },
+                        {
+                            "q": "'In Judaism it's the collective term for Rosh Hashanah & Yom Kippur'",
+                            "value": 800,
+                            "answer": "the High Holy Days"
+                        },
+                        {
+                            "q": "'A religious retreat or commune in India; Gandhi had one at Wardha'",
+                            "value": 1000,
+                            "answer": "an ashram"
+                        }
+                    ],
+                    "name": "RELIGION"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'According to Elton John, \"Baby's got\" these'",
+                            "value": 200,
+                            "answer": "Blue eyes"
+                        },
+                        {
+                            "q": "'Before Elvis sang this song in a 1961 movie, Bing sang it in 1937's \"Waikiki Wedding\"'",
+                            "value": 400,
+                            "answer": "Blue Hawaii"
+                        },
+                        {
+                            "q": "'Back in 1984, David Bowie had just met a girl named this'",
+                            "value": 600,
+                            "answer": "Blue Jean"
+                        },
+                        {
+                            "q": "'In 1977 Linda Ronstadt had a hit with this Roy Orbison tune'",
+                            "value": 800,
+                            "answer": "Blue Bayou"
+                        },
+                        {
+                            "q": "'In a song from the '20s, \"Just Mollie and me, and baby makes three, we're happy in\" this place'",
+                            "value": 1000,
+                            "answer": "My Blue Heaven"
+                        }
+                    ],
+                    "name": "SINGING THE \"BLUE\"S"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Neurologist Sean Kenniff was voted off this show on episode 12'",
+                            "value": 200,
+                            "answer": "Survivor"
+                        },
+                        {
+                            "q": "'After announcing he was hanging up his stethoscope as Dr. Sloan on \"Diagnosis Murder\", he took it back'",
+                            "value": 400,
+                            "answer": "Dick Van Dyke"
+                        },
+                        {
+                            "q": "'The top show of each season from 1985 to 1989 was a sitcom starring this man as a Brooklyn obstetrician'",
+                            "value": 600,
+                            "answer": "Bill Cosby"
+                        },
+                        {
+                            "q": "'He was Jim Anderson, insurance agent, for 13 years; he was Marcus Welby, M.D. for only 7'",
+                            "value": 800,
+                            "answer": "Robert Young"
+                        },
+                        {
+                            "q": "'In 1976 \"The Practice\" was a medical sitcom with this \"Make Room for Daddy\" star'",
+                            "value": 1000,
+                            "answer": "Danny Thomas"
+                        }
+                    ],
+                    "name": "WHAT'S UP, TV DOC?"
+                }
+            ],
+            "double_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'Bob Cousy's 14 & John Havlicek's 17 were honored by this storied franchise'",
+                            "value": 400,
+                            "answer": "the Boston Celtics"
+                        },
+                        {
+                            "q": "'This team retired Ray Nitschke's 66 & Reggie White's 92'",
+                            "value": 800,
+                            "answer": "the Green Bay Packers"
+                        },
+                        {
+                            "q": "'Willie Stargell's No. 8 will be worn by no other player on this team'",
+                            "value": 1200,
+                            "answer": "the (Pittsburgh) Pirates"
+                        },
+                        {
+                            "q": "'This team for which Gordie Howe played 25 seasons retired his number 9'",
+                            "value": 1600,
+                            "answer": "the Detroit Red Wings"
+                        },
+                        {
+                            "q": "'This team for which Bobby Hull played 15 seasons retired his number 9'",
+                            "value": 2000,
+                            "answer": "the Chicago Blackhawks"
+                        }
+                    ],
+                    "name": "TEAMS' RETIRED JERSEYS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Wyoming shares the Black Hills National Forest with this state'",
+                            "value": 400,
+                            "answer": "South Dakota"
+                        },
+                        {
+                            "q": "'A western celebration, Frontier Days, has been held each year since 1897 in this capital'",
+                            "value": 800,
+                            "answer": "Cheyenne"
+                        },
+                        {
+                            "q": "'The source of this main tributary of the Columbia River is located in Yellowstone National Park'",
+                            "value": 1200,
+                            "answer": "the Snake River"
+                        },
+                        {
+                            "q": "'Settlement began in earnest when this railroad pushed across the state in the 1860s'",
+                            "value": 1600,
+                            "answer": "the Union Pacific"
+                        },
+                        {
+                            "q": "'1 of Wyoming's 2 U.S. senators'",
+                            "value": 2000,
+                            "answer": "Alan Simpson (or Malcolm Wallop)"
+                        }
+                    ],
+                    "name": "WYOMING"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Gilligan'",
+                            "value": 400,
+                            "answer": "Bob Denver"
+                        },
+                        {
+                            "q": "'T.J. Hooker'",
+                            "value": 800,
+                            "answer": "William Shatner"
+                        },
+                        {
+                            "q": "'Theo Huxtable'",
+                            "value": 1200,
+                            "answer": "Malcolm-Jamal Warner"
+                        },
+                        {
+                            "q": "'Phyllis Lindstrom'",
+                            "value": 1600,
+                            "answer": "Cloris Leachman"
+                        },
+                        {
+                            "q": "'Joanie Cunningham'",
+                            "value": 2000,
+                            "answer": "Erin Moran"
+                        }
+                    ],
+                    "name": "WHO PLAYED 'EM?"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Henry Wallace<br />(& others)'",
+                            "value": 400,
+                            "answer": "FDR"
+                        },
+                        {
+                            "q": "'Nelson Rockefeller, who had a \"Happy\" wife'",
+                            "value": 800,
+                            "answer": "Gerald Ford"
+                        },
+                        {
+                            "q": "'Millard Fillmore (not the duck of comics fame)'",
+                            "value": 1200,
+                            "answer": "Zachary Taylor"
+                        },
+                        {
+                            "q": "'John Tyler--<br />but not for long'",
+                            "value": 1600,
+                            "answer": "William Henry Harrison"
+                        },
+                        {
+                            "q": "'Chester Arthur--<br />but not for long'",
+                            "value": 2000,
+                            "answer": "Garfield"
+                        }
+                    ],
+                    "name": "I WAS HIS VEEP"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'In a 1979 hit by the Police she's told, \"You don't have to sell your body to the night\"'",
+                            "value": 400,
+                            "answer": "\"Roxanne\""
+                        },
+                        {
+                            "q": "'You might think this Cars leader is married to supermodel Paulina Porizkova (& you'd be right)'",
+                            "value": 800,
+                            "answer": "Ric Ocasek"
+                        },
+                        {
+                            "q": "'A drum machine christened \"Echo\" helped launch this hopping band to fame & fortune'",
+                            "value": 1200,
+                            "answer": "Echo & the Bunnymen"
+                        },
+                        {
+                            "q": "'Last name of Gary, the former Tubeway Army leader who charted with New Wave hits like \"Cars\"'",
+                            "value": 1600,
+                            "answer": "Gary Numan"
+                        },
+                        {
+                            "q": "'(Hi, I'm Jane Wiedlin)  Among my credits is this song that starts, \"Can you hear them?  Talkin' about us, telling lies...\"'",
+                            "value": 2000,
+                            "answer": "\"Our Lips are Sealed\""
+                        }
+                    ],
+                    "name": "THAT OLD TIME NEW WAVE MUSIC"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'With India's help Bangladesh broke away from this country'",
+                            "value": 400,
+                            "answer": "Pakistan"
+                        },
+                        {
+                            "q": "'The Cavaliers opposed the close-cropped Roundheads in this country's civil war'",
+                            "value": 800,
+                            "answer": "England"
+                        },
+                        {
+                            "q": "'Its starving children symbolized the defeat of this Nigerian region'",
+                            "value": 1200,
+                            "answer": "Biafra"
+                        },
+                        {
+                            "q": "'Symbolic colors of opposing sides in Northern Ireland'",
+                            "value": 1600,
+                            "answer": "green and orange"
+                        },
+                        {
+                            "q": "'Name of Franco's party in Spain & main Christian party in Lebanon'",
+                            "value": 2000,
+                            "answer": "the Phalange"
+                        }
+                    ],
+                    "name": "CIVIL WARS"
+                }
+            ],
+            "final_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'This king was the great-grandfather of France's King Louis XV'",
+                            "value": "",
+                            "answer": "Louis XIV"
+                        }
+                    ],
+                    "name": "ROYALTY"
+                }
+            ]
+        },
+        {
+            "name": "Game 3",
+            "jeopardy": [
+                {
+                    "name": "Ryhme Here",
+                    "questions": [
+                        {
+                            "q": "A particular area of interest, or a round 3-dimensional object",
+                            "answer": "Sphere",
+                            "value": 200
+                        },
+                        {
+                            "q": "To continue to try & achieve something",
+                            "answer": "persevere",
+                            "value": 400
+                        },
+                        {
+                            "q": "Term for a Castrated bull",
+                            "answer": "Steer",
+                            "value": 600
+                        },
+                        {
+                            "q": "Plain in style & without decoration",
+                            "answer": "austere",
+                            "value": 800
+                        },
+                        {
+                            "q": "North Chelsea, Massachusetts, was renamed this",
+                            "answer": "Revere",
+                            "value": 1000
+                        }
+                    ]
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Resembling a small lobster, it's Louisiana's state crustacean'",
+                            "value": 200,
+                            "answer": "crawfish/crayfish"
+                        },
+                        {
+                            "q": "'Thought to resemble lions associated with Buddha, this Chinese dog breed was protected by royal decree'",
+                            "value": 400,
+                            "answer": "Pekingese"
+                        },
+                        {
+                            "q": "'Tuna are members of Scombridae, known commonly as this \"holy\" family of fishes'",
+                            "value": 600,
+                            "answer": "mackerels"
+                        },
+                        {
+                            "q": "'Extinct before the dinosaurs ever walked, trilobites are key signature creatures of this \"old animal\" era'",
+                            "value": 800,
+                            "answer": "Paleozoic"
+                        },
+                        {
+                            "q": "'(Sarah of the Clue Crew at Zoo Atlanta)  There are 3 types of gorilla: mountain & the eastern & western type of these lesser-altitude gorillas'",
+                            "value": 1000,
+                            "answer": "lowland gorillas"
+                        }
+                    ],
+                    "name": "THE ANIMALS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Only 3 men to have held this position are Douglas Edwards, Walter Cronkite, & Dan Rather'",
+                            "value": 200,
+                            "answer": "anchormen for the CBS Evening News"
+                        },
+                        {
+                            "q": "'In 1968, this \"Gunsmoke\" star became the 1st woman inducted into the Cowboy Hall of Fame'",
+                            "value": 400,
+                            "answer": "Amanda Blake"
+                        },
+                        {
+                            "q": "'Though Dobie Gillis chased all the other girls, this one wanted to marry him'",
+                            "value": 600,
+                            "answer": "Zelda Gilroy"
+                        },
+                        {
+                            "q": "'This sitcom topped the ratings for 5 seasons in a row, from 1971 to 1976'",
+                            "value": 800,
+                            "answer": "\"All in the Family\""
+                        },
+                        {
+                            "q": "'They not only played \"The Beverly Hillbillies\" theme, but made annual appearances on the show'",
+                            "value": 1000,
+                            "answer": "(Lester) Flatt & (Earl) Scruggs"
+                        }
+                    ],
+                    "name": "TV TRIVIA"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'He is \"a friend indeed\"'",
+                            "value": 200,
+                            "answer": "a friend in need"
+                        },
+                        {
+                            "q": "'Finishes the saying, \"Friendship is a plant which must be often...\"'",
+                            "value": 400,
+                            "answer": "watered"
+                        },
+                        {
+                            "q": "'Christ said, \"Greater love hath no man\" than to do this \"for his friends\"'",
+                            "value": 600,
+                            "answer": "to give up his life (or to lay down his life)"
+                        },
+                        {
+                            "q": "'\"Prosperity makes friends\" but this \"tries them\"'",
+                            "value": 800,
+                            "answer": "adversity"
+                        },
+                        {
+                            "q": "'Friends are \"the thieves\" of this'",
+                            "value": 1000,
+                            "answer": "time"
+                        }
+                    ],
+                    "name": "FRIENDLY PHRASES"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'This stout dwarf bulked up on the Campbell's line of the same name'",
+                            "value": 200,
+                            "answer": "Chunky"
+                        },
+                        {
+                            "q": "'His reddish hair makes his head look like it's covered with ferric oxide'",
+                            "value": 400,
+                            "answer": "Rusty"
+                        },
+                        {
+                            "q": "'Though that canine skin disease caused by mites has cleared up, he still has this nickname'",
+                            "value": 600,
+                            "answer": "Mangy"
+                        },
+                        {
+                            "q": "'Inferences made by this peachy-skinned dwarf are known as the same type of \"logic\"'",
+                            "value": 800,
+                            "answer": "Fuzzy"
+                        },
+                        {
+                            "q": "'This name can mean \"sticky to the touch\", or refer to his flashy, unfashionable clothes'",
+                            "value": 1000,
+                            "answer": "Tacky"
+                        }
+                    ],
+                    "name": "SNOW WHITE'S FORGOTTEN DWARFS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'In 1865, the 13th Amendment abolished \"involuntary\" this but permits is as a punishment for crimes'",
+                            "value": 200,
+                            "answer": "servitude"
+                        },
+                        {
+                            "q": "'The 10th Amendment says powers not given to the federal gov't belong to the people or to these'",
+                            "value": 400,
+                            "answer": "the states"
+                        },
+                        {
+                            "q": "'As per Article I, the first group elected to this body was divided into those who would serve 2, 4, & 6 year terms'",
+                            "value": 600,
+                            "answer": "the Senate"
+                        },
+                        {
+                            "q": "'None of these \"shall be granted by the\" U.S. & no U.S. official shall accept one from another country'",
+                            "value": 800,
+                            "answer": "titles of nobility"
+                        },
+                        {
+                            "q": "'Article 4 makes mandatory this process of returning a suspect to the state where a crime occurred'",
+                            "value": 1000,
+                            "answer": "extradition"
+                        }
+                    ],
+                    "name": "THE U.S. CONSTITUTION"
+                }
+            ],
+            "double_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'In 1894 George Kinney began his chain of stores selling these'",
+                            "value": 400,
+                            "answer": "shoes"
+                        },
+                        {
+                            "q": "'By 1845, with John Young & J.L. Ellis, this NYC jeweler switched from selling paste jewels to real'",
+                            "value": 800,
+                            "answer": "Charles Lewis Tiffany"
+                        },
+                        {
+                            "q": "'Attention, shoppers -- Borders Books once belonged to this major discount retailer'",
+                            "value": 1200,
+                            "answer": "K-Mart"
+                        },
+                        {
+                            "q": "'In 1893 George Brown & this man formed a partnership in Winston-Salem, North Carolina'",
+                            "value": 1600,
+                            "answer": "Robert Williamson"
+                        },
+                        {
+                            "q": "'In 1959 a company in this state got the rights to L'Ecran Magique, the Magic Writer, & renamed it the Etch-A-Sketch'",
+                            "value": 2000,
+                            "answer": "Ohio"
+                        }
+                    ],
+                    "name": "COMPANY HISTORIES"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Decades before Alanis Morissette's \"You Oughta Know\", Doris Day sang \"You Oughta\" this'",
+                            "value": 400,
+                            "answer": "Be in Pictures"
+                        },
+                        {
+                            "q": "'The title of this plaintive Matthew Sweet song is movie star Ryder's first name'",
+                            "value": 800,
+                            "answer": "\"Winona\""
+                        },
+                        {
+                            "q": "'British trio heard here, with a 1984 hit:'",
+                            "value": 1200,
+                            "answer": "Bananarama"
+                        },
+                        {
+                            "q": "'1981 Kim Carnes hit whose lyrics mentioned a then 73-year-old movie star'",
+                            "value": 1600,
+                            "answer": "\"Bette Davis Eyes\""
+                        },
+                        {
+                            "q": "'Appropriately, in the title of a 1961 song Sue Thompson sang that these movies \"make me cry\"'",
+                            "value": 2000,
+                            "answer": "Sad movies"
+                        }
+                    ],
+                    "name": "SONGS ABOUT THE MOVIES"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'This term for a type of fat, heavy pig developed in the late 19th c. is now applied to any pig of more than 120 pounds'",
+                            "value": 400,
+                            "answer": "a hog"
+                        },
+                        {
+                            "q": "'Don't be afraid to tell us the familiar name of this fowl, Gallus gallus domesticus'",
+                            "value": 800,
+                            "answer": "chicken"
+                        },
+                        {
+                            "q": "'Species of this food & clothing provider include the Shropshire, karakul & merino'",
+                            "value": 1200,
+                            "answer": "sheep"
+                        },
+                        {
+                            "q": "'\"Lamoid\" (with one \"L\") is the collective term for this South American herd animal & its relatives'",
+                            "value": 1600,
+                            "answer": "llamas"
+                        },
+                        {
+                            "q": "'The muscovy type of this fowl was originally domesticated in South America, not Russia'",
+                            "value": 2000,
+                            "answer": "a duck"
+                        }
+                    ],
+                    "name": "NO CATTLE"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'This Sir Arthur Conan Doyle tale about a ghostly canine was based on local legend'",
+                            "value": 400,
+                            "answer": "The Hound of the Baskervilles"
+                        },
+                        {
+                            "q": "'Some consider this author's \"The History of Henry Esmond\" his greatest work, not \"Vanity Fair\"'",
+                            "value": 800,
+                            "answer": "William Makepeace Thackeray"
+                        },
+                        {
+                            "q": "'The title of his novel \"Far From the Madding Crowd\" is found in \"Elegy Written in a Country Churchyard\"'",
+                            "value": 1200,
+                            "answer": "Thomas Hardy"
+                        },
+                        {
+                            "q": "'Philip Carey is the central character in this Somerset Maugham novel'",
+                            "value": 1600,
+                            "answer": "Of Human Bondage"
+                        },
+                        {
+                            "q": "'This monumental work by Edward Gibbon covers 13 centuries until the capture of Constantinople'",
+                            "value": 2000,
+                            "answer": "The Decline and Fall of the Roman Empire"
+                        }
+                    ],
+                    "name": "ENGLISH LITERATURE"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Moose'",
+                            "value": 400,
+                            "answer": "Moose"
+                        },
+                        {
+                            "q": "'Mother-in-law'",
+                            "value": 800,
+                            "answer": "Mothers-in-law"
+                        },
+                        {
+                            "q": "'Mongoose'",
+                            "value": 1200,
+                            "answer": "Mongooses"
+                        },
+                        {
+                            "q": "'Phylum'",
+                            "value": 1600,
+                            "answer": "Phylla"
+                        },
+                        {
+                            "q": "'Genus'",
+                            "value": 2000,
+                            "answer": "Genera"
+                        }
+                    ],
+                    "name": "American Heritage PREFERRED PLURALS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Crazy as it sounds, technically an acorn is one of these, a one-seeded fruit with hard walls'",
+                            "value": 400,
+                            "answer": "a nut"
+                        },
+                        {
+                            "q": "'Among the duties of these hard-working insects is dispersing the seeds of plants like bloodroot'",
+                            "value": 800,
+                            "answer": "an ant"
+                        },
+                        {
+                            "q": "'The rare production of a seed without this process taking place is called apomixis'",
+                            "value": 1200,
+                            "answer": "pollination (or fertilization)"
+                        },
+                        {
+                            "q": "'From the liquid they produce, the sesame & sunflower are known as this type of \"seed\"'",
+                            "value": 1600,
+                            "answer": "oil seeds"
+                        },
+                        {
+                            "q": "'Unlike seeds of gymnosperms like conifers, the seeds of the flowering plants, also called these, are enclosed'",
+                            "value": 2000,
+                            "answer": "angiosperms"
+                        }
+                    ],
+                    "name": "A SEEDY CATEGORY"
+                }
+            ],
+            "final_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'The name of Mintaka, a star in this constellation, is from the Arabic for 'belt\"'",
+                            "value": "",
+                            "answer": "Orion"
+                        }
+                    ],
+                    "name": "ASTRONOMY"
+                }
+            ]
+        },
+        {
+            "name": "Game 4",
+            "jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'It's a creamy white color, or what white piano keys were once widely made of'",
+                            "value": 200,
+                            "answer": "Ivory"
+                        },
+                        {
+                            "q": "'Appropriate shade of blue to wear at 12 A.M.'",
+                            "value": 400,
+                            "answer": "Midnight blue"
+                        },
+                        {
+                            "q": "'This Indian name for corn also refers to the color of corn'",
+                            "value": 600,
+                            "answer": "Maize"
+                        },
+                        {
+                            "q": "'The 2 shades of red named for January's & July's birthstones'",
+                            "value": 800,
+                            "answer": "Garnet & Ruby"
+                        },
+                        {
+                            "q": "'This fruity shade of orange shares its name with the Chinese officials who wore robes of that color'",
+                            "value": 1000,
+                            "answer": "Mandarins"
+                        }
+                    ],
+                    "name": "COLORS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Americans thought the war would end by Christmas 1950 -- until this country joined the fray'",
+                            "value": 200,
+                            "answer": "China"
+                        },
+                        {
+                            "q": "'Of a key march, General Oliver Smith said, \"We are not\" doing this, but \"advancing in a different direction\"'",
+                            "value": 400,
+                            "answer": "retreating"
+                        },
+                        {
+                            "q": "'The type of installation seen here, also portrayed in a movie & a sitcom'",
+                            "value": 600,
+                            "answer": "M*A*S*H unit"
+                        },
+                        {
+                            "q": "'Planes from the USS Valley Forge bombed this North Korean capital during the first few weeks of the war'",
+                            "value": 800,
+                            "answer": "Pyongyang"
+                        },
+                        {
+                            "q": "'In 1950 the first all-jet dogfight saw Russell Brown in an F-80 shoot down one of these Soviet planes'",
+                            "value": 1000,
+                            "answer": "MiG"
+                        }
+                    ],
+                    "name": "THE KOREAN WAR"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'We don't see what was so good about this 2-word term for the worldwide 1930s economic disaster'",
+                            "value": 200,
+                            "answer": "the Great Depression"
+                        },
+                        {
+                            "q": "'Both pleasant & painful, as in a memory'",
+                            "value": 400,
+                            "answer": "bittersweet"
+                        },
+                        {
+                            "q": "'Alliterative two-word term for action by one's own forces causing casualties to one's own troops'",
+                            "value": 600,
+                            "answer": "friendly fire"
+                        },
+                        {
+                            "q": "'2-word term for something supposedly confidential but actually known quite generally'",
+                            "value": 800,
+                            "answer": "an open secret"
+                        },
+                        {
+                            "q": "'This computer language gets oxymoronic when it follows \"Advanced\"'",
+                            "value": 1000,
+                            "answer": "BASIC"
+                        }
+                    ],
+                    "name": "A CONTRADICTION IN TERMS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'To make the film \"The Sound of Music\" shorter, a theater manager in Seoul, South Korea cut all of these out of it'",
+                            "value": 200,
+                            "answer": "the songs"
+                        },
+                        {
+                            "q": "'Reportedly, when Henry Ford built his first automobile, he forgot to put in one of these gears'",
+                            "value": 400,
+                            "answer": "reverse"
+                        },
+                        {
+                            "q": "'It's the only precious gem composed of only one element'",
+                            "value": 600,
+                            "answer": "diamond (carbon)"
+                        },
+                        {
+                            "q": "'This insect, the Musca domestica, can become a great-grandmother in only 60 days'",
+                            "value": 800,
+                            "answer": "common housefly"
+                        },
+                        {
+                            "q": "'His name may be erased from your head, but he directed odd movies like \"Eraserhead\" & \"Mulholland Drive\"'",
+                            "value": 1000,
+                            "answer": "David Lynch"
+                        }
+                    ],
+                    "name": "HOW ODD!"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'This band led by brothers Eddie & Alex hit with \"Dancing In The Street\" & \"Dance The Night Away\"'",
+                            "value": 200,
+                            "answer": "Van Halen"
+                        },
+                        {
+                            "q": "'Courteney Cox & this guy were \"Dancing In The Dark\" in his 1984 music video, directed by Brian De Palma'",
+                            "value": 400,
+                            "answer": "Bruce Springsteen"
+                        },
+                        {
+                            "q": "'That hair!  That sneer!  Man, it was the early '80s when this Brit was \"Dancing With Myself\"'",
+                            "value": 600,
+                            "answer": "(Billy) Idol"
+                        },
+                        {
+                            "q": "'In 1984 they hit the Top 20 when they took us back to their \"Dance Hall Days\"; everybody, this band tonight'",
+                            "value": 800,
+                            "answer": "Wang Chung"
+                        },
+                        {
+                            "q": "'\"We can dance if we want to\"--it's the 1983 hit by Men Without Hats (& don't jump in too fast with \"Pop goes the world\")'",
+                            "value": 1000,
+                            "answer": "\"The Safety Dance\""
+                        }
+                    ],
+                    "name": "DANCE TO THE MUSIC"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'It's the French region synonymous with sparkling wine'",
+                            "value": 200,
+                            "answer": "Champagne"
+                        },
+                        {
+                            "q": "'Kirin is a beer from this country'",
+                            "value": 400,
+                            "answer": "Japan"
+                        },
+                        {
+                            "q": "'Taxes on this liquor are reported to provide 17% of the U.S. Virgin Islands gov't budget'",
+                            "value": 600,
+                            "answer": "rum"
+                        },
+                        {
+                            "q": "'In the song, \"American Pie\", it's what \"them good ole boys were drinkin'\"'",
+                            "value": 800,
+                            "answer": "whiskey & rye"
+                        },
+                        {
+                            "q": "'A district in Tuscany lent its name to this wine which comes in a straw-covered flask'",
+                            "value": 1000,
+                            "answer": "chianti"
+                        }
+                    ],
+                    "name": "POTENT POTABLES"
+                }
+            ],
+            "double_jeopardy": [
+                {
+                    "name": "Book Of Mormon",
+                    "questions": [
+                        {
+                            "q": "It was first published by joseph smith in this year",
+                            "answer": "1830",
+                            "value": 400
+                        },
+                        {
+                            "q": "The books from First Nephi to Omni are described as being from these plates",
+                            "answer": "Small Plates of Nephi",
+                            "value": 800
+                        },
+                        {
+                            "q": "Lehi and his family left Jerusalem around 600 BC shortly before the city fell to the Babylonians in this year",
+                            "answer": "583 BC",
+                            "value": 1200
+                        },
+                        {
+                            "q": "The county seat of Sanpete Manti was named after the City Of Manti the most southerly land of this people",
+                            "answer": "Nephites",
+                            "value": 1600
+                        },
+                        {
+                            "q": "Book of Ether is of a record from a people called the Jaredites who fled to the new world from this biblical land",
+                            "answer": "Shinar",
+                            "value": 2000
+                        }
+                    ]
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'After beating Muhammad Ali in 1971, he spent the next several weeks in the hospital'",
+                            "value": 400,
+                            "answer": "Joe Frazier"
+                        },
+                        {
+                            "q": "'He was killed in WWII, leaving the future of his family's political hopes on his brother John'",
+                            "value": 800,
+                            "answer": "Joe Kennedy"
+                        },
+                        {
+                            "q": "'Mafia boss Joe Bonanno was unimaginatively nicknamed for these fruits'",
+                            "value": 1200,
+                            "answer": "bananas"
+                        },
+                        {
+                            "q": "'Joe Strummer strummed & sang for this band heard here:'",
+                            "value": 1600,
+                            "answer": "The Clash"
+                        },
+                        {
+                            "q": "'The name of this U.S. senator became an -ism, meaning unfair public accusation'",
+                            "value": 2000,
+                            "answer": "Joseph McCarthy (\"McCarthyism\")"
+                        }
+                    ],
+                    "name": "EXTRAORDINARY JOES"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Instead of counties, this state has boroughs (or is it brrr-oughs?)'",
+                            "value": 400,
+                            "answer": "Alaska"
+                        },
+                        {
+                            "q": "'This state capital is located on the Merrimack River about 15 miles north of Manchester'",
+                            "value": 800,
+                            "answer": "Concord"
+                        },
+                        {
+                            "q": "'Tributaries of this Mississippi tributary include the Cheyenne, James & Platte'",
+                            "value": 1200,
+                            "answer": "the Missouri"
+                        },
+                        {
+                            "q": "'The Houston ship channel flows into this bay that shares its name with a city'",
+                            "value": 1600,
+                            "answer": "Galveston Bay"
+                        },
+                        {
+                            "q": "'This N.C. peak, the highest east of the Mississippi, was named for the man who surveyed it, died on it & is buried at the top'",
+                            "value": 2000,
+                            "answer": "Mt. Mitchell"
+                        }
+                    ],
+                    "name": "U.S. GEOGRAPHY"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'The Top 40 has been home to these from \"Romeo and Juliet\", \"The Godfather\" & \"St. Elmo's Fire\"'",
+                            "value": 400,
+                            "answer": "Love themes"
+                        },
+                        {
+                            "q": "'The O'Jays wanted us all to \"get on board\" this'",
+                            "value": 800,
+                            "answer": "\"Love Train\""
+                        },
+                        {
+                            "q": "'In 1999 the versatile Jennifer Lopez topped the charts with this single'",
+                            "value": 1200,
+                            "answer": "\"If You Had My Love\""
+                        },
+                        {
+                            "q": "'(Hi, I'm Mick Jones of Foreigner)  I wrote this 1985 Number 1 hit ballad that featured Jennifer Holliday & the New Jersey Mass Choir'",
+                            "value": 1600,
+                            "answer": "\"I Want to Know What Love Is\""
+                        },
+                        {
+                            "q": "'\"It's very clear\", & somewhat ironic, that this was the last song George Gershwin composed'",
+                            "value": 2000,
+                            "answer": "\"Our Love Is Here to Stay\""
+                        }
+                    ],
+                    "name": "\"LOVE\" SONGS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'The Karen Blixen Museum is found in the suburbs of this Kenyan city, one of Africa's largest & fastest growing'",
+                            "value": 400,
+                            "answer": "Nairobi"
+                        },
+                        {
+                            "q": "'This city on the South China Sea once served as the colonial capital of French Indochina'",
+                            "value": 800,
+                            "answer": "Saigon/Ho Chi Minh City"
+                        },
+                        {
+                            "q": "'It's the closest national capital to Mount Everest'",
+                            "value": 1200,
+                            "answer": "Kathmandu, Nepal"
+                        },
+                        {
+                            "q": "'In 1309 Clement V moved the Papal residence to this French city, at that time a haven for heretics & criminals'",
+                            "value": 1600,
+                            "answer": "Avignon"
+                        },
+                        {
+                            "q": "'Known as \"The City of Sails\", this New Zealand metropolis hosted the America's Cup 2000 yachting competition'",
+                            "value": 2000,
+                            "answer": "Auckland"
+                        }
+                    ],
+                    "name": "BIG CITY"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'It was a short interlude between his wins for \"Anna Christie\" (1922) & \"Strange Interlude\" (1928)'",
+                            "value": 400,
+                            "answer": "(Eugene) O\\'Neill"
+                        },
+                        {
+                            "q": "'It was a picnic for him when he won in 1953 for \"Picnic\"'",
+                            "value": 800,
+                            "answer": "William Inge"
+                        },
+                        {
+                            "q": "'For Frank Gilroy in 1965, the subject was winning when \"The Subject Was\" these took home a Pulitzer'",
+                            "value": 1200,
+                            "answer": "Roses"
+                        },
+                        {
+                            "q": "'Sadly, Jonathan Larson had died by the time this musical of his won the Pulitzer in 1996'",
+                            "value": 1600,
+                            "answer": "Rent"
+                        },
+                        {
+                            "q": "'1954's winner was John Patrick for \"The Teahouse of\" this'",
+                            "value": 2000,
+                            "answer": "The Teahouse of the August Moon"
+                        }
+                    ],
+                    "name": "THE PULITZER PRIZE FOR DRAMA"
+                }
+            ],
+            "final_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'\"The Babysitter Murders\" was the working title for this 1978 thriller'",
+                            "value": "",
+                            "answer": "Halloween"
+                        }
+                    ],
+                    "name": "FILMS OF THE '70s"
+                }
+            ]
+        },
+        {
+            "name": "Game 5",
+            "jeopardy": [
+                {
+                    "name": "The Communist Manifesto",
+                    "questions": [
+                        {
+                            "q": "In 1848 he and Karl Marx published the communist manefesto",
+                            "answer": "Engels",
+                            "value": 200
+                        },
+                        {
+                            "q": "The manifestation begins with “a this is haunting Europe”",
+                            "answer": "Specter",
+                            "value": 400
+                        },
+                        {
+                            "q": "In the manifesto the working class is called the proletariat while the capitalist class is called this",
+                            "answer": "bourgeoisie",
+                            "value": 600
+                        },
+                        {
+                            "q": "This organization was the one which tasked Marx and Engels to write the communist manifesto",
+                            "answer": "League of the Just",
+                            "value": 800
+                        },
+                        {
+                            "q": "This 1917 Russian revolution brought the manifesto into much broader prominence",
+                            "answer": "October revolution",
+                            "value": 1000
+                        }
+                    ]
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Any way you say it, it's hot roasted meat served in a pita, topped with onions, tomatoes & a cucumber-yogurt sauce'",
+                            "value": 200,
+                            "answer": "a gyro"
+                        },
+                        {
+                            "q": "'One of Greece's national aperitifs is this sweet anise-flavored liqueur, but drink it slowly'",
+                            "value": 400,
+                            "answer": "ouzo"
+                        },
+                        {
+                            "q": "'Like the Swedish, the Greeks have their own version of these beefy bite-size appetizers, keftedakia'",
+                            "value": 600,
+                            "answer": "meatballs"
+                        },
+                        {
+                            "q": "'White or rose, this classic wine treated with pine tree resin tastes somewhat like turpentine'",
+                            "value": 800,
+                            "answer": "retsina"
+                        },
+                        {
+                            "q": "'Traditionally, moussaka is made with slices of this vegetable & ground lamb or beef, layered & baked'",
+                            "value": 1000,
+                            "answer": "eggplant"
+                        }
+                    ],
+                    "name": "IT'S GREEK FOOD & DRINK TO ME"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'To rafters, rapids are known by this 2-word term'",
+                            "value": 200,
+                            "answer": "White water"
+                        },
+                        {
+                            "q": "'The rills, streams & brooks that feed a river are called these'",
+                            "value": 400,
+                            "answer": "Tributaries"
+                        },
+                        {
+                            "q": "'On an average day the Mississippi dumps over 1 million metric tons of this into the Gulf of Mexico'",
+                            "value": 600,
+                            "answer": "Silt/Sediment"
+                        },
+                        {
+                            "q": "'You may be waiting for the Robert E. Lee on a natural one of these raised river banks created by flood waters'",
+                            "value": 800,
+                            "answer": "Levee"
+                        },
+                        {
+                            "q": "'Unlike a delta, it's a deep, broad mouth of a river; the Amazon's stretches several hundred miles upstream'",
+                            "value": 1000,
+                            "answer": "Estuary"
+                        }
+                    ],
+                    "name": "ALL ABOUT RIVERS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Net,<br />ace,<br />foot fault'",
+                            "value": 200,
+                            "answer": "tennis"
+                        },
+                        {
+                            "q": "'Goalie,<br />throw-in,<br />midfielder'",
+                            "value": 400,
+                            "answer": "soccer"
+                        },
+                        {
+                            "q": "'Bunker,<br />wedge,<br />caddie'",
+                            "value": 600,
+                            "answer": "golf"
+                        },
+                        {
+                            "q": "'Bomb,<br />backfield,<br />blitz'",
+                            "value": 800,
+                            "answer": "football"
+                        },
+                        {
+                            "q": "'Fletch,<br />quiver,<br />bowstring'",
+                            "value": 1000,
+                            "answer": "archery"
+                        }
+                    ],
+                    "name": "SPORTS TERMS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'In 1782 the U.S. chose this eagle as its national bird'",
+                            "value": 200,
+                            "answer": "Bald eagle"
+                        },
+                        {
+                            "q": "'Young eagles are called eyases or these'",
+                            "value": 400,
+                            "answer": "Eaglets"
+                        },
+                        {
+                            "q": "'It's a synonym for sprawl'",
+                            "value": 600,
+                            "answer": "Spreadeagle"
+                        },
+                        {
+                            "q": "'The chapters of the Fraternal Order of Eagles are called these after the nests of eagles'",
+                            "value": 800,
+                            "answer": "Aeries"
+                        },
+                        {
+                            "q": "'Eddie \"The Eagle\" Edwards won the hearts of Englanders in 1988 competing in this Olympic event'",
+                            "value": 1000,
+                            "answer": "Ski jumping"
+                        }
+                    ],
+                    "name": "EAGLE HODGEPODGE"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'The 1857 decision named for this plaintiff ruled that slaves did not have the right to sue in federal courts'",
+                            "value": 200,
+                            "answer": "Dred Scott"
+                        },
+                        {
+                            "q": "'In 1979 this future justice was appointed to the Arizona Court of Appeals'",
+                            "value": 400,
+                            "answer": "(Sandra Day) O\\'Connor"
+                        },
+                        {
+                            "q": "'Justice Potter Stewart famously said of it, \"I know it when I see it\"'",
+                            "value": 600,
+                            "answer": "pornography (or obscenity)"
+                        },
+                        {
+                            "q": "'A Rhodes scholar, he joined the U.S. Supreme Court in 1990 & is the only current justice who has never married'",
+                            "value": 800,
+                            "answer": "David Souter"
+                        },
+                        {
+                            "q": "'In 1938 this future Supreme Court justice was the first-round draft choice of the football Pittsburgh Pirates'",
+                            "value": 1000,
+                            "answer": "Whizzer White"
+                        }
+                    ],
+                    "name": "THE SUPREME COURT"
+                }
+            ],
+            "double_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'Bummer, dude! Getting otitis media before a rock concert totally messes up this all-important sense'",
+                            "value": 400,
+                            "answer": "hearing"
+                        },
+                        {
+                            "q": "'Your tactile sense; it can proverbially be this \"& go\"'",
+                            "value": 800,
+                            "answer": "touch"
+                        },
+                        {
+                            "q": "'If you have the \"Second\" type of this sense, you already knew you'd answer this clue correctly'",
+                            "value": 1200,
+                            "answer": "sight"
+                        },
+                        {
+                            "q": "'You can have a lack of it in fashion, or use chemoreceptor cells to aid it at Chuck E. Cheese's'",
+                            "value": 1600,
+                            "answer": "taste"
+                        },
+                        {
+                            "q": "'Use your septum & posterior nares to help get this sense of your surroundings'",
+                            "value": 2000,
+                            "answer": "smell"
+                        }
+                    ],
+                    "name": "THE FIVE SENSES"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'\"If I Were A Rich Man\"'",
+                            "value": 400,
+                            "answer": "Fiddler on the Roof"
+                        },
+                        {
+                            "q": "'\"When You're Good To Mama\"'",
+                            "value": 800,
+                            "answer": "Chicago"
+                        },
+                        {
+                            "q": "'\"Scenes From An Italian Restaurant\"'",
+                            "value": 1200,
+                            "answer": "Movin\\' Out"
+                        },
+                        {
+                            "q": "'\"Kansas City\" (where \"ev'rythin's up to date\")'",
+                            "value": 1600,
+                            "answer": "Oklahoma!"
+                        },
+                        {
+                            "q": "'\"Wand'rin' Star\"'",
+                            "value": 2000,
+                            "answer": "Paint Your Wagon"
+                        }
+                    ],
+                    "name": "SONGS FROM MUSICALS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Your bold, audacious bets could be called this, perhaps from a blend of \"bold\" & \"audacious\"'",
+                            "value": 400,
+                            "answer": "bodacious"
+                        },
+                        {
+                            "q": "'I expect to be treated like a VIP, so remember that the \"I\" stands for this adjective'",
+                            "value": 800,
+                            "answer": "important"
+                        },
+                        {
+                            "q": "'Also a type of fabric, this synonym for lavish describes my suite (& it rhymes with lush)'",
+                            "value": 1200,
+                            "answer": "plush"
+                        },
+                        {
+                            "q": "'I must see the \"O\" show--it boasts this type of swimming, also an artistic Olympic event'",
+                            "value": 1600,
+                            "answer": "synchronized"
+                        },
+                        {
+                            "q": "'From the Latin for \"great-souled\", it will describe your immense generosity after you win big bucks'",
+                            "value": 2000,
+                            "answer": "magnanimous"
+                        }
+                    ],
+                    "name": "ADJECTIVES TO USE IN VEGAS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Completes the title of a 2003 50 Cent album & a 2005 50 Cent film \"Get Rich Or...\"'",
+                            "value": 400,
+                            "answer": "Die Trying"
+                        },
+                        {
+                            "q": "'A Coldplay song says, \"Look at the stars, look how they shine for you... yeah they were all\" this color'",
+                            "value": 800,
+                            "answer": "yellow"
+                        },
+                        {
+                            "q": "'This 2004 concept album by Green Day is about a character known as Saint Jimmy'",
+                            "value": 1200,
+                            "answer": "\"American Idiot\""
+                        },
+                        {
+                            "q": "'System of a Down played off a book title by this '60s activist with its 2002 CD \"Steal This Album!\"'",
+                            "value": 1600,
+                            "answer": "Abbie Hoffman"
+                        },
+                        {
+                            "q": "'Alt rock band Franz Ferdinand formed in this largest Scottish city'",
+                            "value": 2000,
+                            "answer": "Glasgow"
+                        }
+                    ],
+                    "name": "THE KIDS LOVE THEIR MUSIC"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'In a 1588 sea battle, the English defeated this \"invincible\" fleet of ships'",
+                            "value": 400,
+                            "answer": "Spanish Armada"
+                        },
+                        {
+                            "q": "'16th century Flemish scientist Andreas Vesalius is considered the father of this branch of biology'",
+                            "value": 800,
+                            "answer": "Anatomy"
+                        },
+                        {
+                            "q": "'In 1522 he became the first captain-general of New Spain'",
+                            "value": 1200,
+                            "answer": "Hernando Cortes"
+                        },
+                        {
+                            "q": "'This cardinal's downfall began when he couldn't get an annulment for Henry VIII'",
+                            "value": 1600,
+                            "answer": "Cardinal Thomas Wolsey"
+                        },
+                        {
+                            "q": "'Michelangelo worked on the Sistine Chapel while this artist was painting the walls in the Pope's apartments'",
+                            "value": 2000,
+                            "answer": "Raphael"
+                        }
+                    ],
+                    "name": "THE 16th CENTURY"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Found in warm coastal waters, it's an explosion of fish-killing, toxin-secreting dinoflagellates'",
+                            "value": 400,
+                            "answer": "red tide"
+                        },
+                        {
+                            "q": "'An erythrocyte'",
+                            "value": 800,
+                            "answer": "a red blood cell"
+                        },
+                        {
+                            "q": "'This salad ingredient, <i>capsicum annuum grossum</i>, has been allowed to ripen on the vine'",
+                            "value": 1200,
+                            "answer": "a red pepper"
+                        },
+                        {
+                            "q": "'A small, dim star; Proxima Centauri is one'",
+                            "value": 1600,
+                            "answer": "a red dwarf"
+                        },
+                        {
+                            "q": "'Due to the Doppler effect, it's an increase in the wavelength of radiation emitted by a moving celestial body'",
+                            "value": 2000,
+                            "answer": "red shift"
+                        }
+                    ],
+                    "name": "\"RED\" SCIENCE"
+                }
+            ],
+            "final_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'1 of 2 actors who have earned acting Academy Award nominations in the last 5 consecutive decades'",
+                            "value": "",
+                            "answer": "(1 of) Jack Nicholson or Michael Caine"
+                        }
+                    ],
+                    "name": "LEADING MEN"
+                }
+            ]
+        },
+        {
+            "name": "Game 6",
+            "jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'He was only 21 when he won the 1997 Masters golf tournament by 12 strokes, the biggest margin in its history'",
+                            "value": 200,
+                            "answer": "Tiger Woods"
+                        },
+                        {
+                            "q": "'This U.S. state stretches from 19 to 22 degrees north latitude, making it the southernmost in the U.S.'",
+                            "value": 400,
+                            "answer": "Hawaii"
+                        },
+                        {
+                            "q": "'In John 20 this woman finds that the boulder in front of Jesus' tomb has been rolled away & that he is gone'",
+                            "value": 600,
+                            "answer": "Mary Magdalene"
+                        },
+                        {
+                            "q": "'The USAF's Stealth fighter aircraft known as the F-22 also bears the name of this \"robbing\" dinosaur'",
+                            "value": 800,
+                            "answer": "the Raptor"
+                        },
+                        {
+                            "q": "'During this war, Gen. Winfield Scott landed 10,000 U.S. troops at Veracruz & took the city in 19 days'",
+                            "value": 1000,
+                            "answer": "the Mexican War"
+                        }
+                    ],
+                    "name": "19, 20, 21 & 22"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'It figures that Otto was the name of the autopilot in this 1980 movie comedy in the clouds'",
+                            "value": 200,
+                            "answer": "Airplane"
+                        },
+                        {
+                            "q": "'Tom Hanks & several FedEx packages survive a particularly bumpy flight in this film'",
+                            "value": 400,
+                            "answer": "Castaway"
+                        },
+                        {
+                            "q": "'Nicolas Cage plays Cameron Poe, a prisoner with a heart of gold, in this flighty film'",
+                            "value": 600,
+                            "answer": "Conair"
+                        },
+                        {
+                            "q": "'One of the President's own men is a terrorist when the title plane gets hijacked in this 1997 actioner'",
+                            "value": 800,
+                            "answer": "Air Force One"
+                        },
+                        {
+                            "q": "'Vera Farmiga & Anna Kendrick were both nominated for Oscars for this 2009 film'",
+                            "value": 1000,
+                            "answer": "Up In The Air"
+                        }
+                    ],
+                    "name": "AIRBORNE"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'In one version of the Grimm story, she had a sister named Rose Red'",
+                            "value": 200,
+                            "answer": "Snow White"
+                        },
+                        {
+                            "q": "'2-word phrase for an attempt to deceive by using flattery'",
+                            "value": 400,
+                            "answer": "Snow job"
+                        },
+                        {
+                            "q": "'Found in the mountains of central Asia, this feline is also known as an ounce'",
+                            "value": 600,
+                            "answer": "Snow leopard"
+                        },
+                        {
+                            "q": "'In 1970 Anne Murray urged it to \"spread your tiny wings and fly away\"'",
+                            "value": 800,
+                            "answer": "\"Snowbird\""
+                        },
+                        {
+                            "q": "'Antony Armstrong-Jones, who married & divorced Princess Margaret, holds this title'",
+                            "value": 1000,
+                            "answer": "Lord Snowdon/Earl of Snowdon"
+                        }
+                    ],
+                    "name": "LET IT \"SNOW\""
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'A bypass operation may bypass the carotid or coronary one of these'",
+                            "value": 200,
+                            "answer": "Artery"
+                        },
+                        {
+                            "q": "'An instrument called a reamer is used in the replacement of this joint at the top of the femur'",
+                            "value": 400,
+                            "answer": "Hip"
+                        },
+                        {
+                            "q": "'The technical term for the common operation to remove the uterus'",
+                            "value": 600,
+                            "answer": "Hysterectomy"
+                        },
+                        {
+                            "q": "'If someone's reconnecting your bile ducts, you've just had this transplant first performed by Dr. Thomas Starzl'",
+                            "value": 800,
+                            "answer": "Liver transplant"
+                        },
+                        {
+                            "q": "'The acronymic word \"laser\" is represented in this acronym for a popular sight-improvement surgery'",
+                            "value": 1000,
+                            "answer": "LASIK"
+                        }
+                    ],
+                    "name": "A DELICATE OPERATION"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Frosted Brown Sugar Cinnamon is among the 3 most popular flavors of this Kellogg toaster pastry'",
+                            "value": 200,
+                            "answer": "Pop-Tarts"
+                        },
+                        {
+                            "q": "'In 2003 campers made one of these with approx. 20,000 marshmallows, 7,000 Hershey bars & 24,000 graham crackers'",
+                            "value": 400,
+                            "answer": "a s\\'more"
+                        },
+                        {
+                            "q": "'Spice things up with this snack--tortilla chips covered with melted cheese & dare I say jalapenos!'",
+                            "value": 600,
+                            "answer": "nachos"
+                        },
+                        {
+                            "q": "'Nibblers, like the chocolate chip & white chunk macademia, are bite-size versions of her cookies'",
+                            "value": 800,
+                            "answer": "Mrs. Fields"
+                        },
+                        {
+                            "q": "'A hike sounds like the right time for this snack that you can make with Chex cereal, M&Ms, raisins & peanuts'",
+                            "value": 1000,
+                            "answer": "trail mix"
+                        }
+                    ],
+                    "name": "SNACK ATTACK"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Some stories say that this member of Robin Hood's merry men was 7 feet tall'",
+                            "value": 200,
+                            "answer": "Little John"
+                        },
+                        {
+                            "q": "'This sheriff & main enemy of Robin Hood is also the chief law enforcement officer of Derbyshire'",
+                            "value": 400,
+                            "answer": "the Sheriff of Nottingham"
+                        },
+                        {
+                            "q": "'16th century plays by Anthony Munday call this woman Matilda Fitzwater'",
+                            "value": 600,
+                            "answer": "Maid Marian"
+                        },
+                        {
+                            "q": "'In \"Ivanhoe\" this devout man is known as the Clerk of Copmanhurst & lives at a Hermitage'",
+                            "value": 800,
+                            "answer": "Friar Tuck"
+                        },
+                        {
+                            "q": "'This red-clad dandy was said to be Robin Hood's nephew'",
+                            "value": 1000,
+                            "answer": "Will Scarlet"
+                        }
+                    ],
+                    "name": "LIFE WITH THE HOOD"
+                }
+            ],
+            "double_jeopardy": [
+                {
+                    "name": "Carol Tervort",
+                    "questions": [
+                        {
+                            "q": "Born Carol Davis in 1942 she grew up in this small town in rural Utah",
+                            "answer": "Wales",
+                            "value": 400
+                        },
+                        {
+                            "q": "In 1962 the year she married Louis Tervort. The World Cup heated up this South America country.",
+                            "answer": "Chile",
+                            "value": 800
+                        },
+                        {
+                            "q": "This was the #1 hit of the year her first daughter Lisa was born",
+                            "answer": "I wanna hold your hand",
+                            "value": 1200
+                        },
+                        {
+                            "q": "Her second child was Roger under this president's administration",
+                            "answer": "Johnson",
+                            "value": 1600
+                        },
+                        {
+                            "q": "An skilled musician she also played Organ for her church. The largest of which is located in this US city.",
+                            "answer": "Atlantic City",
+                            "value": 2000
+                        }
+                    ]
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'To make this kind of \"corn\", you coat popcorn with butter, corn syrup & brown sugar'",
+                            "value": 400,
+                            "answer": "Caramel corn"
+                        },
+                        {
+                            "q": "'Shrimp covered in a flour, baking powder, salt, water & egg mix then deep-fried in peanut oil; it's popular in Japan'",
+                            "value": 800,
+                            "answer": "Tempura"
+                        },
+                        {
+                            "q": "'It's a dish of veal shank braised with wine & veggies that includes a tasty bit of marrow in the bone'",
+                            "value": 1200,
+                            "answer": "Osso buco"
+                        },
+                        {
+                            "q": "'To make this \"royal\" roast, you have to bend your 2 racks of lamb into a circle'",
+                            "value": 1600,
+                            "answer": "Crown roast"
+                        },
+                        {
+                            "q": "'Add beets to a corned beef hash & it's called this'",
+                            "value": 2000,
+                            "answer": "Red flannel hash"
+                        }
+                    ],
+                    "name": "WHATCHA GOT COOKIN'?"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'The Spanish claimed this Aztec emperor was stoned to death by his own people'",
+                            "value": 400,
+                            "answer": "Moctezuma"
+                        },
+                        {
+                            "q": "'In Greek myth, the clever Palamedes is stoned to death after he's framed by this sly epic hero'",
+                            "value": 800,
+                            "answer": "Odysseus"
+                        },
+                        {
+                            "q": "'In Exodus 19 God warns the Israelites to keep away from this mountain while he's up there or they'll get stoned'",
+                            "value": 1200,
+                            "answer": "Sinai"
+                        },
+                        {
+                            "q": "'This Islamic law system prescribes stoning as punishment for adultery'",
+                            "value": 1600,
+                            "answer": "Sharia law"
+                        },
+                        {
+                            "q": "'After his trial by the Sanhedrin, this first Christian martyr was stoned to death'",
+                            "value": 2000,
+                            "answer": "(Saint) Stephen"
+                        }
+                    ],
+                    "name": "THEY WERE STONED"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Jefferson Davis was elected to a 6-year term as President of the CSA early in this year'",
+                            "value": 400,
+                            "answer": "1861"
+                        },
+                        {
+                            "q": "'Like Lincoln a few months later, Davis was born in a log cabin in this state'",
+                            "value": 800,
+                            "answer": "Kentucky"
+                        },
+                        {
+                            "q": "'A West Point graduate, Davis fought for the U.S. in this 1840s conflict'",
+                            "value": 1200,
+                            "answer": "the Mexican War"
+                        },
+                        {
+                            "q": "'Davis' vice president was this former U.S. representative from Georgia'",
+                            "value": 1600,
+                            "answer": "Alexander Stephens"
+                        },
+                        {
+                            "q": "'From 1853 to 1857 Davis served as this president's Secretary of War'",
+                            "value": 2000,
+                            "answer": "Pierce"
+                        }
+                    ],
+                    "name": "JEFFERSON DAVIS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'A 1980 Charles Higham book claims that this swashbuckling actor was a spy for the Gestapo'",
+                            "value": 400,
+                            "answer": "Errol Flynn"
+                        },
+                        {
+                            "q": "'According to the Book of Numbers, he sent 12 men to spy out the Land of Canaan'",
+                            "value": 800,
+                            "answer": "Moses"
+                        },
+                        {
+                            "q": "'This American spy was exchanged for Rudolf Abel on February 10, 1962'",
+                            "value": 1200,
+                            "answer": "(Francis Gary) Powers"
+                        },
+                        {
+                            "q": "'He wrote an autobiography explaining how he \"Led 3 Lives\"'",
+                            "value": 1600,
+                            "answer": "Herbert Philbrick"
+                        },
+                        {
+                            "q": "'In 1948 this editor of Time magazine identified himself & Alger Hiss as Soviet agents'",
+                            "value": 2000,
+                            "answer": "Whittaker Chambers"
+                        }
+                    ],
+                    "name": "SPIES"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'A shoulder-held weapon for firing armor-piercing rockets'",
+                            "value": 400,
+                            "answer": "a bazooka"
+                        },
+                        {
+                            "q": "'To walk with long steps (you may \"hit\" yours or \"take things in\" it)'",
+                            "value": 800,
+                            "answer": "a stride"
+                        },
+                        {
+                            "q": "'A special edition of a newspaper'",
+                            "value": 1200,
+                            "answer": "extra"
+                        },
+                        {
+                            "q": "'The lunar kind means the light of the Moon is obscured because  the Earth is between the Moon & the sun'",
+                            "value": 1600,
+                            "answer": "an eclipse"
+                        },
+                        {
+                            "q": "'Without worry'",
+                            "value": 2000,
+                            "answer": "carefree"
+                        }
+                    ],
+                    "name": "ALSO A GUM BRAND"
+                }
+            ],
+            "final_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'Now referring to a scapegoat, this term originated as someone designated as a \"proxy for correction\"'",
+                            "value": "",
+                            "answer": "a whipping boy"
+                        }
+                    ],
+                    "name": "SLANG TERM ORIGINS"
+                }
+            ]
+        },
+        {
+            "name": "Game 7",
+            "jeopardy": [
+                {
+                    "name": "The \"Aye\"s have it",
+                    "questions": [
+                        {
+                            "q": "Boby Fisher was a famous one of these",
+                            "answer": "chessplayer",
+                            "value": 200
+                        },
+                        {
+                            "q": "If you leave uranium 235 around long it enough it will have done this",
+                            "answer": "DECAYED",
+                            "value": 400
+                        },
+                        {
+                            "q": "Famous frenchman during the american revolution",
+                            "answer": "Lafayette",
+                            "value": 600
+                        },
+                        {
+                            "q": "If there's 12 of these on the field and you might see a yellow flag.",
+                            "answer": "player",
+                            "value": 800
+                        },
+                        {
+                            "q": "I heard it through the grapevine singer",
+                            "answer": "gaye",
+                            "value": 1000
+                        }
+                    ]
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'In D.C. for the 2009 inauguration, he was told he couldn't check in early at Blair House; an ex-Aussie P.M. had it'",
+                            "value": 200,
+                            "answer": "(Barack) Obama"
+                        },
+                        {
+                            "q": "'This mustachioed Fox News reporter was kicked out of Iraq in '03; some may have been miffed he gave out troop positions'",
+                            "value": 400,
+                            "answer": "Geraldo Rivera"
+                        },
+                        {
+                            "q": "'This \"Clerks\" director said, \"I'm way fat... but I'm just not there yet\" after Southwest de-planed him for being overweight'",
+                            "value": 600,
+                            "answer": "Kevin Smith"
+                        },
+                        {
+                            "q": "'Some \"general\" info--this military man died in London on June 14, 1801, unpopular in 2 countries'",
+                            "value": 800,
+                            "answer": "Benedict Arnold"
+                        },
+                        {
+                            "q": "'In June 2009 this U.S. car company lost its place on the Dow Jones Industrial Average'",
+                            "value": 1000,
+                            "answer": "GM"
+                        }
+                    ],
+                    "name": "ALL-AMERICAN REJECTS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'In this type of glasses, the lens has 3 sections allowing for near, medium & distant vision'",
+                            "value": 200,
+                            "answer": "a trifocal"
+                        },
+                        {
+                            "q": "'High cholesterol is often associated with high levels of this fat in the blood'",
+                            "value": 400,
+                            "answer": "triglycerides"
+                        },
+                        {
+                            "q": "'The god Neptune is frequently depicted in art wielding one of these'",
+                            "value": 600,
+                            "answer": "a trident"
+                        },
+                        {
+                            "q": "'It's the 3-legged support often used by a photographer'",
+                            "value": 800,
+                            "answer": "a tripod"
+                        },
+                        {
+                            "q": "'It was the first of the 3 periods that make up the Mesozoic Era'",
+                            "value": 1000,
+                            "answer": "the Triassic"
+                        }
+                    ],
+                    "name": "\"TRI\" ME"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Our sun is classified as the yellow type of these \"small\" stars'",
+                            "value": 200,
+                            "answer": "Dwarfs"
+                        },
+                        {
+                            "q": "'Like those of the genus Malus, most wild apples are of this tart \"crustacean\" type'",
+                            "value": 400,
+                            "answer": "Crabapples"
+                        },
+                        {
+                            "q": "'Of 6,000, 66,000 or 666,000 MPH, the closest to the speed of the Earth around the sun'",
+                            "value": 600,
+                            "answer": "66,000"
+                        },
+                        {
+                            "q": "'2 of the 4 stages of development for most insects'",
+                            "value": 800,
+                            "answer": "Egg, larva, pupa, adult"
+                        },
+                        {
+                            "q": "'The adult human brain is made up of more than 10 billion of these nerve cells'",
+                            "value": 1000,
+                            "answer": "Neurons"
+                        }
+                    ],
+                    "name": "SCIENCE & NATURE"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'It's waved to indicate a truce or surrender'",
+                            "value": 200,
+                            "answer": "White Flag"
+                        },
+                        {
+                            "q": "'In this game, a tug on the ear means \"sounds like\", and a touch on the nose: \"you're right\"'",
+                            "value": 400,
+                            "answer": "Charades"
+                        },
+                        {
+                            "q": "'These noisy insects are a sign of good luck in China'",
+                            "value": 600,
+                            "answer": "Crickets/Cicadas"
+                        },
+                        {
+                            "q": "'The two types of these home-signaling devices are photoelectric & ionization'",
+                            "value": 800,
+                            "answer": "Smoke Detectors"
+                        },
+                        {
+                            "q": "'The ringing of the church bells on this holiday in 1572 was the signal to massacre Huguenots'",
+                            "value": 1000,
+                            "answer": "St. Bartholomew\\'s Day"
+                        }
+                    ],
+                    "name": "SIGNS & SIGNALS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'She played the wife who knew too much in the remake of \"The Man Who Knew Too Much\" --que sera, sera'",
+                            "value": 200,
+                            "answer": "Doris Day"
+                        },
+                        {
+                            "q": "'This \"regal\" blonde stabs Anthony Dawson to death with a pair of scissors in \"Dial M For Murder\"'",
+                            "value": 400,
+                            "answer": "Grace Kelly"
+                        },
+                        {
+                            "q": "'She was Mrs. Clark Gable when she starred in Hitchcock's comedy \"Mr. And Mrs. Smith\"'",
+                            "value": 600,
+                            "answer": "Carole Lombard"
+                        },
+                        {
+                            "q": "'Glamour girl whose femme fatale role in \"Vertigo\" was no picnic'",
+                            "value": 800,
+                            "answer": "Kim Novak"
+                        },
+                        {
+                            "q": "'She stole her way into Sean Connery's heart as the title kleptomaniac in \"Marnie\"'",
+                            "value": 1000,
+                            "answer": "Tippi Hedren"
+                        }
+                    ],
+                    "name": "HITCHCOCK'S BLONDES"
+                }
+            ],
+            "double_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'It can refer to a one-story suburban home as well as to a home on a large farm where animals are raised'",
+                            "value": 400,
+                            "answer": "Ranch house"
+                        },
+                        {
+                            "q": "'This word for a shack is also heard in quarterbacks' signals'",
+                            "value": 800,
+                            "answer": "Hut"
+                        },
+                        {
+                            "q": "'Fictional hero Travis McGee lives aboard one of these, The Busted Flush, moored at Fort Lauderdale'",
+                            "value": 1200,
+                            "answer": "Houseboat"
+                        },
+                        {
+                            "q": "'Hyphenated name for a shelter made of an inclined roof supported by 2 upright pieces'",
+                            "value": 1600,
+                            "answer": "Lean-to"
+                        },
+                        {
+                            "q": "'This name for an often rundown apartment building comes from the Latin for \"to hold\"'",
+                            "value": 2000,
+                            "answer": "Tenement"
+                        }
+                    ],
+                    "name": "WE JUST LIVE IN IT"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Term for the 1916-1923 conflict over Ireland; Hamlet spoke of \"A Sea Of\" them'",
+                            "value": 400,
+                            "answer": "Troubles"
+                        },
+                        {
+                            "q": "'In 1997 Albanians rebelled after losing their savings in these financial schemes'",
+                            "value": 800,
+                            "answer": "Pyramid schemes"
+                        },
+                        {
+                            "q": "'These medieval peasants were bound to the land, so they didn't get to catch many waves'",
+                            "value": 1200,
+                            "answer": "Serfs"
+                        },
+                        {
+                            "q": "'Around 30,000 B.C. these hyphenated Homo Sapiens succeeded the Neanderthals in Europe'",
+                            "value": 1600,
+                            "answer": "Cro-Magnon Man"
+                        },
+                        {
+                            "q": "'In this 1936-39 war, the Axis Powers supported the Nationalists & the USSR backed the Loyalists'",
+                            "value": 2000,
+                            "answer": "Spanish Civil War"
+                        }
+                    ],
+                    "name": "EUROPEAN HISTORY"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'You can isolate about 1 gram of this element, Ra, out of several tons of pitchblende'",
+                            "value": 400,
+                            "answer": "Radium"
+                        },
+                        {
+                            "q": "'In the 1700s Georg Ernst Stahl coined the Phlogiston Theory, that a form of burning caused this on iron'",
+                            "value": 800,
+                            "answer": "Rust"
+                        },
+                        {
+                            "q": "'A free radical is an atom or molecule that has an odd number of these'",
+                            "value": 1200,
+                            "answer": "Electrons"
+                        },
+                        {
+                            "q": "'Lithium reacts with this common substance to form lithium hydroxide'",
+                            "value": 1600,
+                            "answer": "Water"
+                        },
+                        {
+                            "q": "'Bromine & chlorine are in a group of elements known by this name, from the Greek for \"salt-forming\"'",
+                            "value": 2000,
+                            "answer": "Halogens"
+                        }
+                    ],
+                    "name": "CHEMISTRY"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'His novels include \"The Prairie\", \"The Pioneers\", & \"The Pathfinder\"'",
+                            "value": 400,
+                            "answer": "James Fenimore Cooper"
+                        },
+                        {
+                            "q": "'She wrote \"Jo's Boys\" in 1886, a second sequel to her 1860s novel'",
+                            "value": 800,
+                            "answer": "Louisa May Alcott"
+                        },
+                        {
+                            "q": "'This \"Ship of Fools\" author won a Pulitzer & the National Book Award for her 1965 \"Collected Stories\"'",
+                            "value": 1200,
+                            "answer": "Katherine Anne Porter"
+                        },
+                        {
+                            "q": "'The movie \"Yentl\" was based on a story by him'",
+                            "value": 1600,
+                            "answer": "Isaac Bashevis Singer"
+                        },
+                        {
+                            "q": "'In 2001 this novelist & short story writer's \"We Were the Mulvaneys\" was chosen for Oprah's Book Club'",
+                            "value": 2000,
+                            "answer": "Joyce Carol Oates"
+                        }
+                    ],
+                    "name": "3-NAMED AUTHORS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'In 1997, as her daughter left for Stanford, she wondered \"why I ever agreed to let her skip third grade\"'",
+                            "value": 400,
+                            "answer": "Hillary Rodham Clinton"
+                        },
+                        {
+                            "q": "'Ironically, Marianne Moore began a poem about this literary form, \"I, Too, Dislike It\"'",
+                            "value": 800,
+                            "answer": "poetry"
+                        },
+                        {
+                            "q": "'In 1776 she wrote to husband John, \"Remember the ladies, and be more generous....to them than your ancestors\"'",
+                            "value": 1200,
+                            "answer": "Abigail Adams"
+                        },
+                        {
+                            "q": "'\"One is not born a woman, one becomes one\", this Frenchwoman wrote in \"The Second Sex\"'",
+                            "value": 1600,
+                            "answer": "Simone de Beauvoir"
+                        },
+                        {
+                            "q": "'This British novelist & essayist thought human character changed \"on or about December 1910\"'",
+                            "value": 2000,
+                            "answer": "Virginia Woolf"
+                        }
+                    ],
+                    "name": "SHE SAID"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'The son of a Protestant clergyman, Carl Jung was born in this mountainous country in 1875'",
+                            "value": 400,
+                            "answer": "Switzerland"
+                        },
+                        {
+                            "q": "'Jung called these \"unidentified\" things, first reported by pilot Kenneth Arnold in 1947, \"a modern myth\"'",
+                            "value": 800,
+                            "answer": "UFOs/flying saucers"
+                        },
+                        {
+                            "q": "'Seeing the view as too reductionist, Jung believed Sigmund Freud overemphasized the importance of this drive'",
+                            "value": 1200,
+                            "answer": "sex drive"
+                        },
+                        {
+                            "q": "'Jung practiced this \"free\" technique for exploring the mind in which a patient responds to stimulus words'",
+                            "value": 1600,
+                            "answer": "free association"
+                        },
+                        {
+                            "q": "'According to Jung, the collective unconscious of man is made up of these primordial symbols'",
+                            "value": 2000,
+                            "answer": "archetypes"
+                        }
+                    ],
+                    "name": "THE JUNG & THE RESTLESS"
+                }
+            ],
+            "final_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'He publicly objected to the name of a 2004 documentary for infringing on the title of one of his books'",
+                            "value": "",
+                            "answer": "Ray Bradbury"
+                        }
+                    ],
+                    "name": "AUTHORS"
+                }
+            ]
+        },
+        {
+            "name": "Game 8",
+            "jeopardy": [
+                {
+                    "name": "Math",
+                    "questions": [
+                        {
+                            "q": "It's the number of feet in a mile divided by three",
+                            "answer": "1760",
+                            "value": 200
+                        },
+                        {
+                            "q": "Square root of cups in a gallon",
+                            "answer": "4",
+                            "value": 400
+                        },
+                        {
+                            "q": "How far you could go in an hour and a half at a mile a minute",
+                            "answer": "90 miles",
+                            "value": 600
+                        },
+                        {
+                            "q": "To convert Kilograms to Grams multiply by this",
+                            "answer": "1000",
+                            "value": 800
+                        },
+                        {
+                            "q": "2 times 0 plus 2",
+                            "answer": "2",
+                            "value": 1000
+                        }
+                    ]
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'He ran for the Senate in 1858 & lost; 2 years later he was elected president'",
+                            "value": 200,
+                            "answer": "Lincoln"
+                        },
+                        {
+                            "q": "'He was the first person to be runner-up in a U.S. Presidential election & then later win the job'",
+                            "value": 400,
+                            "answer": "John Adams"
+                        },
+                        {
+                            "q": "'New York governor Samuel J. Tilden lost the 1876 presidential election by this many electoral votes'",
+                            "value": 600,
+                            "answer": "1"
+                        },
+                        {
+                            "q": "'He lost to Nixon by the largest electoral margin in history, 520 to 17'",
+                            "value": 800,
+                            "answer": "McGovern"
+                        },
+                        {
+                            "q": "'The only Republican presidential nominee to lose twice, his running mate the 2nd time was Earl Warren'",
+                            "value": 1000,
+                            "answer": "Dewey"
+                        }
+                    ],
+                    "name": "I GET NO KICK FROM CAMPAIGN"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Milk-Bone brand dog biscuits claim to clean teeth & freshen this naturally'",
+                            "value": 200,
+                            "answer": "breath"
+                        },
+                        {
+                            "q": "'A brand described as \"just good cat food\", or a stray feline who hangs out in passageways'",
+                            "value": 400,
+                            "answer": "Alley Cat"
+                        },
+                        {
+                            "q": "'A dog food \"recommended by top breeders\", or the ancestral line of a purebred canine'",
+                            "value": 600,
+                            "answer": "Pedigree"
+                        },
+                        {
+                            "q": "'The cat food known as \"Kit 'N\" this claims \"It makes other meals seem downright mousy!\"'",
+                            "value": 800,
+                            "answer": "Kaboodle"
+                        },
+                        {
+                            "q": "'Something given in return for a good deed, or a dog food \"for the very best dogs in the world\"'",
+                            "value": 1000,
+                            "answer": "Reward"
+                        }
+                    ],
+                    "name": "PET FOOD"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'The head of a union of these workers calls them the only mainly female transportation work force'",
+                            "value": 200,
+                            "answer": "Flight attendants"
+                        },
+                        {
+                            "q": "'By federal regulation, you have to be told that federal law bars \"tampering with, disabling, or destroying\" this'",
+                            "value": 400,
+                            "answer": "Smoke detector"
+                        },
+                        {
+                            "q": "'This airline term for \"to get off an aircraft\" sounds like Tattoo's line on \"Fantasy Island\"'",
+                            "value": 600,
+                            "answer": "Deplane"
+                        },
+                        {
+                            "q": "'The \"type II\" version of the fluid for this winter process is good for about 30 minutes'",
+                            "value": 800,
+                            "answer": "Deicing"
+                        },
+                        {
+                            "q": "'This cable outfit's airport network is now seen at over 1,500 gate areas in the U.S.'",
+                            "value": 1000,
+                            "answer": "CNN (Cable News Network)"
+                        }
+                    ],
+                    "name": "AIRLINE TRAVEL"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'In 1762 he moved to New Haven & became a druggist; traitor came later'",
+                            "value": 200,
+                            "answer": "Benedict Arnold"
+                        },
+                        {
+                            "q": "'While the Miss U.S.A. pageant moves around, the Miss America pageant is always held here'",
+                            "value": 400,
+                            "answer": "Atlantic City"
+                        },
+                        {
+                            "q": "'It's the cabinet post that advises the government on legal matters'",
+                            "value": 600,
+                            "answer": "Attorney General"
+                        },
+                        {
+                            "q": "'In 1966 he was elected governor of Maryland'",
+                            "value": 800,
+                            "answer": "Spiro Agnew"
+                        },
+                        {
+                            "q": "'He was Secretary of State in Sam Houston's cabinet'",
+                            "value": 1000,
+                            "answer": "Stephen F. Austin"
+                        }
+                    ],
+                    "name": "U.S.\"A\"s"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'The mother of a mule'",
+                            "value": 200,
+                            "answer": "Horse (Mare)"
+                        },
+                        {
+                            "q": "'It's another name for your coccyx'",
+                            "value": 400,
+                            "answer": "Tailbone"
+                        },
+                        {
+                            "q": "'Union Carbide makes this common car additive that contains ethylene glycol'",
+                            "value": 600,
+                            "answer": "Antifreeze"
+                        },
+                        {
+                            "q": "'This unit of measure in weather is abbreviated mb'",
+                            "value": 800,
+                            "answer": "Millibar"
+                        },
+                        {
+                            "q": "'Frenchman who discovered the Piezoelectric Effect, that certain crystals when stressed make electricity'",
+                            "value": 1000,
+                            "answer": "Pierre Curie"
+                        }
+                    ],
+                    "name": "SCIENCE"
+                }
+            ],
+            "double_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'Tahiti is part of the 130-island group called French this'",
+                            "value": 400,
+                            "answer": "Polynesia"
+                        },
+                        {
+                            "q": "'Named for one of the country's early prime ministers, Fox Glacier is found on this nation's South Island'",
+                            "value": 800,
+                            "answer": "New Zealand"
+                        },
+                        {
+                            "q": "'Cornelius Houtman established Dutch trade from Java to this island off Africa, 4th-largest in the world'",
+                            "value": 1200,
+                            "answer": "Madagascar"
+                        },
+                        {
+                            "q": "'To visit this windy South American plateau, you may want to bring a Synchilla jacket from the company of the same name'",
+                            "value": 1600,
+                            "answer": "Patagonia"
+                        },
+                        {
+                            "q": "'The Princess Ragnhild Coast is part of this Antarctic land named for a Norwegian queen'",
+                            "value": 2000,
+                            "answer": "Queen Maud Land"
+                        }
+                    ],
+                    "name": "SOUTH OF THE EQUATOR"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'1964:<br />\"Supercalifragilis-<br />ticexpialidocious\"'",
+                            "value": 400,
+                            "answer": "Mary Poppins"
+                        },
+                        {
+                            "q": "'1968:<br />\"Open the pod bay doors, HAL\"'",
+                            "value": 800,
+                            "answer": "2001"
+                        },
+                        {
+                            "q": "'1938 (full title!):<br />\"Welcome to Sherwood, my lady!\"'",
+                            "value": 1200,
+                            "answer": "The Adventures of Robin Hood"
+                        },
+                        {
+                            "q": "'1956:<br />\"They're here already!  You're next!  You're next!\"'",
+                            "value": 1600,
+                            "answer": "Invasion of the Body Snatchers"
+                        },
+                        {
+                            "q": "'1939:<br />\"My friends just call me Ringo--nickname I had as a kid\"'",
+                            "value": 2000,
+                            "answer": "Stagecoach"
+                        }
+                    ],
+                    "name": "NAME THAT MOVIE"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'This familiar nickname for folks from down under is a shortened & altered form of \"Australian\"'",
+                            "value": 400,
+                            "answer": "Aussie"
+                        },
+                        {
+                            "q": "'If you visit this city, you'll find its people, the Genovese, call it Genova'",
+                            "value": 800,
+                            "answer": "Genoa"
+                        },
+                        {
+                            "q": "'Samoans live in the Samoan Islands, while Samians live on Samos, one of this country's islands'",
+                            "value": 1200,
+                            "answer": "Greece"
+                        },
+                        {
+                            "q": "'The people of this English city are called Mancunians'",
+                            "value": 1600,
+                            "answer": "Manchester"
+                        },
+                        {
+                            "q": "'Many Belarusians & Ukrainians live in this country bordered on its east by Belarus & Ukraine'",
+                            "value": 2000,
+                            "answer": "Poland"
+                        }
+                    ],
+                    "name": "PEOPLE & PLACES"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Cotopaxi, this country's highest active volcano, is only 35 miles south of Quito'",
+                            "value": 400,
+                            "answer": "Ecuador"
+                        },
+                        {
+                            "q": "'Bistecca alla Fiorentina, a grilled steak dish, is a specialty of this Italian city'",
+                            "value": 800,
+                            "answer": "Florence"
+                        },
+                        {
+                            "q": "'Suva is the chief port of this Pacific island country, as well as its capital'",
+                            "value": 1200,
+                            "answer": "Fiji"
+                        },
+                        {
+                            "q": "'Crossair is this country's domestic airline; you might fly it into Lugano'",
+                            "value": 1600,
+                            "answer": "Switzerland"
+                        },
+                        {
+                            "q": "'The Tortola Museum of these British Caribbean islands is in Road Town, the capital'",
+                            "value": 2000,
+                            "answer": "British Virgin Islands"
+                        }
+                    ],
+                    "name": "AROUND THE WORLD"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Population 4.3 million, it's \"The Creole State\"'",
+                            "value": 400,
+                            "answer": "Louisiana"
+                        },
+                        {
+                            "q": "'The name of this Creole dish comes from a French dialect & means \"Stew of rice & fowl\"'",
+                            "value": 800,
+                            "answer": "jambalaya"
+                        },
+                        {
+                            "q": "'This Caribbean nation's 2 official languages are French & Creole'",
+                            "value": 1200,
+                            "answer": "Haiti"
+                        },
+                        {
+                            "q": "'Following the death of his mad Creole wife Bertha in a fire, this literary character weds Jane Eyre'",
+                            "value": 1600,
+                            "answer": "Rochester"
+                        },
+                        {
+                            "q": "'Called P.G.T.,  this Confederate Creole general led the attack of Fort Sumter to start the Civil War'",
+                            "value": 2000,
+                            "answer": "General Beauregard"
+                        }
+                    ],
+                    "name": "CREOLE CURIOSITY SHOP"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'In 1920, King Alexander of Greece, bitten by a monkey, died of septicemia, also called by this 2-word name'",
+                            "value": 400,
+                            "answer": "blood poisoning"
+                        },
+                        {
+                            "q": "'A type of high-tech TV screen shares its name with this straw-colored fluid of the blood'",
+                            "value": 800,
+                            "answer": "plasma"
+                        },
+                        {
+                            "q": "'The inherited absence of the blood-clotting agent known as factor VIII leads to this disease'",
+                            "value": 1200,
+                            "answer": "hemophilia"
+                        },
+                        {
+                            "q": "'Much of this organ's blood comes from the hepatic artery'",
+                            "value": 1600,
+                            "answer": "liver"
+                        },
+                        {
+                            "q": "'O- is the universal donor blood type & we're \"positive\" that this blood type is the \"universal recipient\"'",
+                            "value": 2000,
+                            "answer": "AB"
+                        }
+                    ],
+                    "name": "BLOOD SIMPLE"
+                }
+            ],
+            "final_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'Richard Attenborough, who was in the original 1952 cast of this play, helped celebrate its performance No. 20,000 in 2000'",
+                            "value": "",
+                            "answer": "The Mousetrap"
+                        }
+                    ],
+                    "name": "THE BRITISH THEATRE"
+                }
+            ]
+        },
+        {
+            "name": "Game 9",
+            "jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'The FBI began publishing an official \"Ten Most Wanted\" list in 1950, while this man was director'",
+                            "value": 200,
+                            "answer": "J. Edgar Hoover"
+                        },
+                        {
+                            "q": "'When arrested in 1967, James Ringrose gave FBI agents one of these Monopoly cards; it didn't work'",
+                            "value": 400,
+                            "answer": "\"get out of jail free\""
+                        },
+                        {
+                            "q": "'Don Bussmeyer made the list in 1967 but didn't last long; he was caught shirtless, with this tattooed on his chest'",
+                            "value": 600,
+                            "answer": "his name"
+                        },
+                        {
+                            "q": "'Of the nearly 500 people on this list since its inception, only 8 have been these; the first made it in 1968'",
+                            "value": 800,
+                            "answer": "women"
+                        },
+                        {
+                            "q": "'The original \"Slick Willie\", this bank robber made the list in its second week; he got caught within 2 years'",
+                            "value": 1000,
+                            "answer": "Willie Sutton"
+                        }
+                    ],
+                    "name": "THE MOST WANTED LIST"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Wham!'",
+                            "value": 200,
+                            "answer": "George Michael"
+                        },
+                        {
+                            "q": "'Dire Straits'",
+                            "value": 400,
+                            "answer": "Mark Knopfler"
+                        },
+                        {
+                            "q": "'The Talking Heads'",
+                            "value": 600,
+                            "answer": "David Byrne"
+                        },
+                        {
+                            "q": "'Smashing Pumpkins'",
+                            "value": 800,
+                            "answer": "Billy Corgan"
+                        },
+                        {
+                            "q": "'The Clash'",
+                            "value": 1000,
+                            "answer": "Joe Strummer"
+                        }
+                    ],
+                    "name": "SING!"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Was born a British subject'",
+                            "value": 200,
+                            "answer": "Washington"
+                        },
+                        {
+                            "q": "'The tallest'",
+                            "value": 400,
+                            "answer": "Lincoln"
+                        },
+                        {
+                            "q": "'Lost the popular vote in a presidential election'",
+                            "value": 600,
+                            "answer": "Bush"
+                        },
+                        {
+                            "q": "'Went to Yale & Harvard'",
+                            "value": 800,
+                            "answer": "Bush"
+                        },
+                        {
+                            "q": "'Received a patent'",
+                            "value": 1000,
+                            "answer": "Lincoln"
+                        }
+                    ],
+                    "name": "WASHINGTON, LINCOLN OR GEORGE W. BUSH"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'He died just 83 days after starting his fourth term as president'",
+                            "value": 200,
+                            "answer": "Franklin D. Roosevelt"
+                        },
+                        {
+                            "q": "'Her \"diary\" became a Pulitzer Prize-winning Broadway play in 1956'",
+                            "value": 400,
+                            "answer": "Anne Frank"
+                        },
+                        {
+                            "q": "'On \"M*A*S*H\", Hot Lips mixed with this \"Lipless Wonder\" to have a \"major\" affair'",
+                            "value": 600,
+                            "answer": "Major Frank Burns"
+                        },
+                        {
+                            "q": "'900th floor please; during his 7-decade career, this architect made plans for a mile-high skyscraper'",
+                            "value": 800,
+                            "answer": "Frank Lloyd Wright"
+                        },
+                        {
+                            "q": "'The Atreides family, exiled on Arrakis, starred in the \"Chronicles of Dune\" by this sci-fi author'",
+                            "value": 1000,
+                            "answer": "Frank Herbert"
+                        }
+                    ],
+                    "name": "FRANKS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Heroes & villains abound! Colby, Coach & Rupert doth return to the fray but Boston Rob, the tribe hath spoken'",
+                            "value": 200,
+                            "answer": "Survivor"
+                        },
+                        {
+                            "q": "'In truth, Rod Blagojevich, thou displeasest me mightily & thy hair scares even me... thou art fired!'",
+                            "value": 400,
+                            "answer": "The Apprentice"
+                        },
+                        {
+                            "q": "'Rudy, though thou sheddeth 213 lbs. in our 8th season, I am sorry to inform thee, thou art not...'",
+                            "value": 600,
+                            "answer": "The Biggest Loser"
+                        },
+                        {
+                            "q": "'DJ Pauly D!  Arise from thy tanning bed!  Ronnie hath come to blows on the boardwalk!  Do not tarry!  \"The Situation\" is dire!'",
+                            "value": 800,
+                            "answer": "Jersey Shore"
+                        },
+                        {
+                            "q": "'Rogues! Fugitives! Hear me! The Chapmans will track & capture thee from Hawaii to Colorado! This is our (A&E) quest!'",
+                            "value": 1000,
+                            "answer": "Dog the Bounty Hunter"
+                        }
+                    ],
+                    "name": "REALITY SHOWS A LA SHAKESPEARE"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'He was a Marine, a truck driver & a soda jerk before he starred in \"The French Connection\"'",
+                            "value": 200,
+                            "answer": "Gene Hackman"
+                        },
+                        {
+                            "q": "'This handsome leading man was a truck driver before he shared \"Pillow Talk\" with Doris Day'",
+                            "value": 400,
+                            "answer": "Rock Hudson"
+                        },
+                        {
+                            "q": "'This current monarch drove a 3-ton truck & serviced motor engines during WWII<br /><i>1992 is not a year on which I shall look back with undiluted pleasure. Whereas, one of my more sympathetic correspondents, it has turned out to be an Annus horribilis</i>'",
+                            "value": 600,
+                            "answer": "Queen Elizabeth II"
+                        },
+                        {
+                            "q": "'He drove a truck for an oil company long before he starred in \"To Kill A Mockingbird\"'",
+                            "value": 800,
+                            "answer": "Gregory Peck"
+                        },
+                        {
+                            "q": "'This British star of \"Who Framed Roger Rabbit?\" was formerly a truck driver, a steeplejack & a fire eater'",
+                            "value": 1000,
+                            "answer": "Bob Hoskins"
+                        }
+                    ],
+                    "name": "THEY USED TO BE TRUCK DRIVERS"
+                }
+            ],
+            "double_jeopardy": [
+                {
+                    "name": "Rhyme Time",
+                    "questions": [
+                        {
+                            "q": "An oxford that's a piece of evidence at a crime scene",
+                            "answer": "A Clue Shoe",
+                            "value": 400
+                        },
+                        {
+                            "q": "A Portly winged mammal",
+                            "answer": "A Fat Bat",
+                            "value": 800
+                        },
+                        {
+                            "q": "An Irate parent",
+                            "answer": "A mad dad",
+                            "value": 1200
+                        },
+                        {
+                            "q": "An envious royal",
+                            "answer": "A green queen",
+                            "value": 1600
+                        },
+                        {
+                            "q": "Electricy from plants",
+                            "answer": "Flower Power",
+                            "value": 2000
+                        }
+                    ]
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'It was followed by the Iron Age'",
+                            "value": 400,
+                            "answer": "the Bronze (Age)"
+                        },
+                        {
+                            "q": "'Thin-sheeted gilded lettering'",
+                            "value": 800,
+                            "answer": "gold leaf (or gold foil)"
+                        },
+                        {
+                            "q": "'The two biggest crowds at this Detroit-area stadium were for the Pope & Wrestlemania III'",
+                            "value": 1200,
+                            "answer": "the Silverdome"
+                        },
+                        {
+                            "q": "'Your 25th annual remembrance of your wedding'",
+                            "value": 1600,
+                            "answer": "the silver anniversary"
+                        },
+                        {
+                            "q": "'A lazy loafer, or someone who makes bullion'",
+                            "value": 2000,
+                            "answer": "a gold bricker"
+                        }
+                    ],
+                    "name": "GOLD, SILVER, BRONZE"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'Quirks of this Eurocar include the ignition lock in the center console'",
+                            "value": 400,
+                            "answer": "Saab"
+                        },
+                        {
+                            "q": "'It's how you properly address the Queen of England'",
+                            "value": 800,
+                            "answer": "Maam"
+                        },
+                        {
+                            "q": "'Biblical man with a talking ass'",
+                            "value": 1200,
+                            "answer": "Balaam"
+                        },
+                        {
+                            "q": "'Architect Eero'",
+                            "value": 1600,
+                            "answer": "Saarinen"
+                        },
+                        {
+                            "q": "'This river \"trans\"its South Africa & flows into the Orange'",
+                            "value": 2000,
+                            "answer": "Vaal River"
+                        }
+                    ],
+                    "name": "DOUBLE A"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'The name of this 2-wheeled device comes from the Japanese for \"human-powered vehicle\"'",
+                            "value": 400,
+                            "answer": "rickshaw"
+                        },
+                        {
+                            "q": "'Tesla & Lightning are companies that make cars powered by this'",
+                            "value": 800,
+                            "answer": "electricity"
+                        },
+                        {
+                            "q": "'The Tesoro Irondog Race in Alaska uses this type of vehicle'",
+                            "value": 1200,
+                            "answer": "a snowmobile"
+                        },
+                        {
+                            "q": "'Kitty Hawk is one of the classes of this large Navy ship'",
+                            "value": 1600,
+                            "answer": "(aircraft) carrier"
+                        },
+                        {
+                            "q": "'A word for something with many parts, like a bill in Congress, can be shortened to this public transport'",
+                            "value": 2000,
+                            "answer": "bus"
+                        }
+                    ],
+                    "name": "GET MOVING"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'From the Greek for \"to see\", it's a wide & unobstructed biew of an extensive area in all directions'",
+                            "value": 400,
+                            "answer": "panorama"
+                        },
+                        {
+                            "q": "'A flag, a pedestal or a song often used in repertories'",
+                            "value": 800,
+                            "answer": "standard"
+                        },
+                        {
+                            "q": "'The scientific name of this whale is Megaptera novaeangliae, or \"Big-winged New Englander\"'",
+                            "value": 1200,
+                            "answer": "the humpback"
+                        },
+                        {
+                            "q": "'It's the death or decay of body tissue due to injury or failure of the blood supply'",
+                            "value": 1600,
+                            "answer": "gangrene"
+                        },
+                        {
+                            "q": "'The military term for weapons & ammunition, it can also describe the tools used to make them'",
+                            "value": 2000,
+                            "answer": "ordnance"
+                        }
+                    ],
+                    "name": "8-LETTER WORDS"
+                },
+                {
+                    "questions": [
+                        {
+                            "q": "'In 1812 fleeing Muscovites burned many buildings as his troops marched into Moscow'",
+                            "value": 400,
+                            "answer": "Napoleon"
+                        },
+                        {
+                            "q": "'In 1703 this city on the Neva River became Russia's first built in imitation of western European cities'",
+                            "value": 800,
+                            "answer": "St. Petersburg"
+                        },
+                        {
+                            "q": "'In 1972 Nixon & Brezhnev signed an agreement to limit nuclear arms after a series of meetings called SALT, or this'",
+                            "value": 1200,
+                            "answer": "Strategic Arms Limitation Talks"
+                        },
+                        {
+                            "q": "'In 1240 Batu & his troops destroyed Kiev & Russia became a part of this empire'",
+                            "value": 1600,
+                            "answer": "the Mongol Empire"
+                        },
+                        {
+                            "q": "'In 1903 Russia's Socialist Democratic Labor Party split into 2 groups: the Bolsheviks & this'",
+                            "value": 2000,
+                            "answer": "the Mensheviks"
+                        }
+                    ],
+                    "name": "RUSSIAN PAST"
+                }
+            ],
+            "final_jeopardy": [
+                {
+                    "questions": [
+                        {
+                            "q": "'This company's namesake founder, the son of German immigrants, sold pickles to Pittsburgh grocers'",
+                            "value": "",
+                            "answer": "Heinz"
+                        }
+                    ],
+                    "name": "COMPANY ORIGINS"
+                }
+            ]
+        }
+    ]
 }
