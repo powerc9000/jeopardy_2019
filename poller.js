@@ -13,7 +13,7 @@ const INPUTS = {
   RESET: 24
 };
 
-const controllerPins = [26, 19];
+const controllerPins = [26, 19, 13, 20, 16];
 const controllers = [];
 const players = [];
 const penalties = {};
