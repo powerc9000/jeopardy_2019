@@ -47,9 +47,11 @@
       }
       selectGame(e) {
         this.state.game = e.target.value;
-        this.state.categories = this.questions.games[e.target.value].jeopardy;
-        this.setDailyDoubles(this.state.game);
+        this.state.questions = this.questions.games[e.target.value];
+        this.state.categories = this.state.questions.jeopardy;
         this.state.boardState = "showBoard";
+
+        this.setDailyDoubles(this.state.game);
         this.start();
         this.targets.find("gameListSelect").style.display = "none";
       }
@@ -58,22 +60,24 @@
           return Math.round(Math.random() * (max - min) + min);
         };
 
-        this.questions.games[this.state.game].jeopardy[randInt(0, 6)].questions[
-          randInt(1, 5)
+        this.state.questions.jeopardy[randInt(0, 5)].questions[
+          randInt(1, 4)
         ].dailyDouble = true;
 
-        this.questions.games[this.state.game].double_jeopardy[
-          randInt(0, 6)
-        ].questions[randInt(1, 5)].dailyDouble = true;
-        this.questions.games[this.state.game].double_jeopardy[
-          randInt(0, 6)
-        ].questions[randInt(1, 5)].dailyDouble = true;
+        this.state.questions.double_jeopardy[randInt(0, 5)].questions[
+          randInt(1, 4)
+        ].dailyDouble = true;
+        this.state.questions.double_jeopardy[randInt(0, 5)].questions[
+          randInt(1, 4)
+        ].dailyDouble = true;
+
+        this.tellState();
       }
       setRound(e) {
         const round = e.target.value;
         this.state.round = round;
         this.state.boardState = "showBoard";
-        this.state.categories = this.questions.games[this.state.game][round];
+        this.state.categories = this.state.questions[round];
         if (round === "final_jeopardy") {
           this.state.boardState = "showQuestion";
           this.state.selectedQuestion = this.state.categories[0].name;
@@ -284,6 +288,7 @@
           cat.questions.forEach((q, qIdx) => {
             const li = liTemplate.cloneNode(true);
             li.classList.toggle("used", !!q.used);
+            li.classList.toggle("daily-double", !!q.dailyDouble);
             if (q.used) {
               li.querySelector(`button[data-for="edit"]`).style = "";
             }
