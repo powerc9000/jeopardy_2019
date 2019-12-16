@@ -48,15 +48,31 @@
       selectGame(e) {
         this.state.game = e.target.value;
         this.state.categories = this.questions.games[e.target.value].jeopardy;
+        this.setDailyDoubles(this.state.game);
         this.state.boardState = "showBoard";
         this.start();
         this.targets.find("gameListSelect").style.display = "none";
+      }
+      setDailyDoubles(gameIndex) {
+        const randInt = (min, max) => {
+          return Math.round(Math.random() * (max - min) + min);
+        };
+
+        this.questions.games[this.state.game].jeopardy[randInt(0, 6)].questions[
+          randInt(1, 5)
+        ].dailyDouble = true;
+
+        this.questions.games[this.state.game].double_jeopardy[
+          randInt(0, 6)
+        ].questions[randInt(1, 5)].dailyDouble = true;
+        this.questions.games[this.state.game].double_jeopardy[
+          randInt(0, 6)
+        ].questions[randInt(1, 5)].dailyDouble = true;
       }
       setRound(e) {
         const round = e.target.value;
         this.state.round = round;
         this.state.boardState = "showBoard";
-        console.log(this.state.game, this.questions);
         this.state.categories = this.questions.games[this.state.game][round];
         if (round === "final_jeopardy") {
           this.state.boardState = "showQuestion";
