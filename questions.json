@@ -750,7 +750,7 @@
                     "questions": [
                         {
                             "q": "'This king was the great-grandfather of France's King Louis XV'",
-                            "value": "",
+                            "value": "1",
                             "answer": "Louis XIV"
                         }
                     ],

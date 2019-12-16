@@ -41,6 +41,7 @@
       justify-content: center;
       border: 2px black solid;
       font-family: "Bebas Neue";
+      text-align: center;
     }
     .question {
       text-shadow: 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black,
@@ -54,7 +55,7 @@
       font-size: 100px;
     }
     .category {
-      font-size: 50px;
+      font-size: 45px;
       text-shadow: 2px 2px 0px black;
     }
 
@@ -143,8 +144,8 @@
         if (state.boardState === "showQuestion") {
           bigquestion.style.display = "flex";
           const question = state.selectedQuestion;
+          bigquestion.innerHTML = question.replace(/^'/, "").replace(/'$/, "");
 
-          bigquestion.innerHTML = question;
           setFontSize(bigquestion);
         }
 
