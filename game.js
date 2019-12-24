@@ -139,7 +139,12 @@
         const [cIDX, qIDX] = q.split(":");
         const question = this.state.categories[cIDX].questions[qIDX];
         question.used = true;
-        this.state.question = { index: qIDX, cat: cIDX, ...question };
+        this.state.question = {
+          index: qIDX,
+          cat: cIDX,
+          ...question,
+          round: this.state.round
+        };
         this.state.selectedQuestion = question.q;
         if (question.dailyDouble) {
           this.state.boardState = "dailyDouble";
@@ -250,8 +255,10 @@
 
           const status = this.player.getQuestionStatus(
             player,
-            this.state.question
+            this.state.question,
+            this.state.round
           );
+          console.log(status, this.state.question, this.state.round);
           if (status) {
             const button = buttonTemplate.querySelector(
               `[data-for="${status}"]`
@@ -292,8 +299,9 @@
             if (q.used) {
               li.querySelector(`button[data-for="edit"]`).style = "";
             }
+            const base = this.state.round === "jeopardy" ? 200 : 400;
             const button = li.querySelector("button[data-for=select]");
-            button.innerText = q.value;
+            button.innerText = q.value || qIdx * base + base;
             [...li.querySelectorAll("button")].forEach((button) => {
               button.dataset.question = `${catIdx}:${qIdx}`;
             });
@@ -327,17 +335,31 @@
           let score = 0;
 
           player.correct.forEach((r) => {
-            score += Number(r.value);
+            let calc = Number(r.value);
+            if (!calc) {
+              const mul = r.round === "jeopardy" ? 1 : 2;
+              calc = 200 * mul * Number(r.index) + 200 * mul;
+            }
+            score += Number(calc);
           });
           player.wrong.forEach((w) => {
-            score -= Number(w.value);
+            let calc = Number(w.value);
+            if (!calc) {
+              const mul = w.round === "jeopardy" ? 1 : 2;
+              calc = 200 * mul * Number(w.index) + 200 * mul;
+            }
+            score -= Number(calc);
           });
 
           return score;
         },
-        getQuestionStatus: (player, question) => {
+        getQuestionStatus: (player, question, round) => {
           const isWrong = player.wrong.find((q) => {
-            return q.cat === question.cat && q.index === question.index;
+            return (
+              q.cat === question.cat &&
+              q.index === question.index &&
+              round === q.round
+            );
           });
 
           if (isWrong) {
@@ -345,7 +367,11 @@
           }
 
           const isRight = player.correct.find((q) => {
-            return q.cat === question.cat && q.index === question.index;
+            return (
+              q.cat === question.cat &&
+              q.index === question.index &&
+              round === q.round
+            );
           });
 
           if (isRight) {
